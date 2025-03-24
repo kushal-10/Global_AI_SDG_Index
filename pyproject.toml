@@ -1,0 +1,17 @@
+[project]
+name = "sustainability_index"
+version = "0.1.0"
+description = "Analyzing corporate disclosures to generate sustainability insights"
+authors = ["Kushal Koshti <kushalkoshti9@gmail.com>"]
+dependencies = [
+    "requests",
+    "pillow",
+    "mlx-vlm",
+    "docling-core"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black"]
+
+[tool.uv]
+resolver = "lowest"
