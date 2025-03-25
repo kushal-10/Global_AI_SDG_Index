@@ -9,6 +9,8 @@ dependencies = [
     "mlx-vlm",
     "docling-core",
     "langchain-docling",
+    "langchain_experimental",
+    "langchain-openai",
     "tqdm",
     "pymupdf"
 ]

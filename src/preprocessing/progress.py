@@ -21,7 +21,7 @@ for country in countries:
 
 print(total_pdfs)
 
-dir = 'annual_txts'
+dir = 'annual_txts_fitz'
 
 total_txts = 0
 countries = os.listdir(dir)
