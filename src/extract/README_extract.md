@@ -9,12 +9,12 @@ OR when the PDF is scanned instead of being in a digital format
 python3 src/extract/pdf2text.py
 ```
 
-Check if PDF to text generates any garbage values
+Check if PDF to text generates any non_ascii values
 
 ```
-python3 src/extract/non_ascii_check.py
+python3 src/extract/check_non_ascii.py
 ```
-If there are garbage values --> Enter OCR
+If there are non_ascii values --> Enter OCR. TODO: Check for zh, hi languages
 
 #### Docling OCR
 

@@ -5,10 +5,8 @@ import os
 from tqdm import tqdm
 import logging
 
-logging.basicConfig(
-    filename="pdf2text.log",
-    level=logging.INFO
-)
+from src.extract.check_non_ascii import scan_txt_files
+
 
 def get_txt_content(file: str = "temp"):
     """
@@ -42,36 +40,17 @@ def write_text(content: str = "temp", file: str = "temp.txt"):
 
 if __name__ == '__main__':
 
-    txt_dir = 'annual_txts'
-    dir = 'annual_reports'
-    rem_count = 0
-
-    countries = os.listdir(dir)
-    for country in countries:
-        if not os.path.isdir(os.path.join(dir, country)):
-            continue
-        companies = os.listdir(os.path.join(dir, country))
-        for company in tqdm(companies, desc=f"Processing for Country - {country}"):
-            if not os.path.isdir(os.path.join(dir, country, company)):
-                continue
-            years = os.listdir(os.path.join(dir, country, company))
-            for year in years:
-                if year.endswith('.pdf'):
-                    year_temp = year.replace('.pdf', '')
-                    results_dir = os.path.join(txt_dir, country, company, year_temp)
-                    if not os.path.isdir(results_dir):
-                        os.makedirs(results_dir)
-                        logging.info(f"Getting docs for - {results_dir}")
-                        doc_content = get_txt_content(os.path.join(dir, country, company, year))
-                        write_text(doc_content, os.path.join(results_dir, 'results.txt'))
-                        logging.info(f"DONE for file - {results_dir}")
-                        logging.info("%"*100)
-                        
-                    elif os.path.isdir(results_dir) and not os.listdir(results_dir):
-                        logging.info(f"Getting docs for - {results_dir}")
-                        doc_content = get_txt_content(os.path.join(dir, country, company, year))
-                        write_text(doc_content, os.path.join(results_dir, 'results.txt'))
-                        logging.info("%"*100)
-    
-    # print(rem_count) 
-        
+    non_ascii_files = scan_txt_files('annual_txts_fitz')
+    logging.basicConfig(
+        filename=os.path.join("src", "extract", "ocr.log"),
+        filemode="a",
+        format="%(asctime)s — %(name)s — %(levelname)s — %(message)s",
+        level=logging.INFO
+    )
+    logging.info(f"Found the following files with non_ascii charachters. Using OCR..... {non_ascii_files}\n\n")
+    for file in tqdm(non_ascii_files):
+        logging.info("@"*100)
+        logging.info(f"Generating text content for {file} \n")
+        path = file.replace("/results.txt", ".pdf").replace("annual_txts_fitz", "annual_reports")
+        txt_content = get_txt_content(path)
+        write_text(txt_content, file)
