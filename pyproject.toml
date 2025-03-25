@@ -9,7 +9,8 @@ dependencies = [
     "mlx-vlm",
     "docling-core",
     "langchain-docling",
-    "tqdm"
+    "tqdm",
+    "pymupdf"
 ]
 
 [project.optional-dependencies]

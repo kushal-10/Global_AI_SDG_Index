@@ -13,7 +13,6 @@ def rename_pdfs(dir: str = 'annual_reports'):
         dir: The path containing all the PDFs. Expected format - PATH/country/company/corresponding_year.pdf
     """
 
-    total_pdfs = 0
     countries = os.listdir(dir)
     for country in countries:
         if not os.path.isdir(os.path.join(dir, country)):
@@ -25,7 +24,6 @@ def rename_pdfs(dir: str = 'annual_reports'):
             years = os.listdir(os.path.join(dir, country, company))
             for year in years:
                 if year.endswith('.pdf') or year.endswith('.PDF'):
-                    total_pdfs += 1
                     found = 0
                     for year_str in year_list:
                         if year_str in year:
@@ -34,7 +32,6 @@ def rename_pdfs(dir: str = 'annual_reports'):
                     if not found:
                         print(f"Check PDF name for - {os.path.join(dir, country, company, year)}")
                 
-    print(f"Total PDFs in the dataset - {total_pdfs}")
 
 def check_non_pdfs(dir: str = 'annual_reports'):
     """

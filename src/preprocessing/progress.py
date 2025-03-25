@@ -2,7 +2,24 @@
 import os 
 from tqdm import tqdm 
 
-total_pdfs = 804 # excl. microsoft docx files
+dir = 'annual_reports'
+
+total_pdfs = 0
+countries = os.listdir(dir)
+for country in countries:
+    if not os.path.isdir(os.path.join(dir, country)):
+        continue
+    companies = os.listdir(os.path.join(dir, country))
+    for company in tqdm(companies, desc=f"Processing for Country - {country}"):
+        if not os.path.isdir(os.path.join(dir, country, company)):
+            continue
+        years = os.listdir(os.path.join(dir, country, company))
+        for year in years:
+            if year.endswith('.pdf'):
+                total_pdfs += 1
+
+
+print(total_pdfs)
 
 dir = 'annual_txts'
 
@@ -24,3 +41,4 @@ for country in countries:
                 total_txts += 1
 
 print(total_txts)
+print(total_pdfs - total_txts)
