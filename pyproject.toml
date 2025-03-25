@@ -7,7 +7,9 @@ dependencies = [
     "requests",
     "pillow",
     "mlx-vlm",
-    "docling-core"
+    "docling-core",
+    "langchain-docling",
+    "tqdm"
 ]
 
 [project.optional-dependencies]
