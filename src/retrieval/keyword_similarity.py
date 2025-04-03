@@ -8,6 +8,11 @@ import json
 # Ensure NLTK resources are available
 nltk.download('punkt')
 
+"""
+BUG: Extracted passages are sometimes repeated.
+Try similarity again here, to remove passages similar to eac other, maybe inc T_similairty > 0.9
+"""
+
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
