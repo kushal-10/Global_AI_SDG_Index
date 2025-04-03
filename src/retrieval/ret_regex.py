@@ -27,6 +27,10 @@ def split_into_chunks(text: str, chunk_size: int = 200, overlap: int = 20) -> Li
 
 def find_keyword_in_passage(passage: str) -> Tuple[bool, str]:
     """Check if any keyword exists in the passage and return the matched term."""
+
+    # DEPRECATED - 
+    # Explan embeddings as well.
+    
     keywords = [
         r'artificial intelligence',
         # r'machine learning',
@@ -73,14 +77,18 @@ def extract_semantic_passages_with_context(file_path):
         return []
 
 def extract_passages(output_file: str):
-    json_metadata = {}
+    # json_metadata = {}
 
-    # Check if the output file exists and load existing data if it does
-    if os.path.exists(output_file) and os.path.getsize(output_file) > 0:
-        with open(output_file, 'r') as f:
-            json_metadata = json.load(f)
+    # # Check if the output file exists and load existing data if it does
+    # if os.path.exists(output_file) and os.path.getsize(output_file) > 0:
+    #     with open(output_file, 'r') as f:
+    #         json_metadata = json.load(f)
 
-    countries = ['USA', 'India', 'China', 'Germany']
+    # countries = ['USA', 'India', 'China', 'Germany']
+    # countries = ['Germany']
+    countries = ['USA']
+
+    tot_ment = 0
     for country in countries:
         firms = os.listdir(os.path.join(directory_path, country))
         for firm in firms:
@@ -89,17 +97,15 @@ def extract_passages(output_file: str):
                 json_key = os.path.join(country, firm, year)
                 txt_path = os.path.join(directory_path, country, firm, year, 'results.txt')
                 # Check if the key already exists
-                if json_key not in [list(json_metadata.keys())]:
-                    extracted_passages = extract_semantic_passages_with_context(txt_path)
-                    
-                    if len(extracted_passages) == 0:
-                        print(f"No extracted passages for : {json_key}")
-                    else:
-                        json_metadata[json_key] = extracted_passages
+                # if json_key not in [list(json_metadata.keys())]:
+                extracted_passages = extract_semantic_passages_with_context(txt_path)
+                
+                if len(extracted_passages) == 0:
+                    print(f"No extracted passages for : {json_key}")
+                else:
+                    tot_ment += len(extracted_passages)
 
-                    # Save the updated metadata to the output file after processing each year
-                    with open(output_file, 'w') as f:
-                        json.dump(json_metadata, f, indent=4)
+    print(tot_ment)
 
 def extract_sample(pth:str = "src/retrieval/results/ret_regex_2023.json"):
     txt_path = os.path.join("annual_txts_fitz", "USA", "10.Tesla_$663.43B_Industries", "2023", "results.txt")
@@ -124,4 +130,6 @@ if __name__ == '__main__':
     # with open(output_file, 'r') as f:
     #     json_data = json.load(f)
     # print(f"Total Documents processed - {len(json_data)}")
-    extract_sample()
+    extract_passages("r")
+    # 643 - germany
+    # 267 - USA
