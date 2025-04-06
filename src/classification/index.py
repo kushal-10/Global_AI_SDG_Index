@@ -5,6 +5,10 @@ import os
 SI = SUM(SDG_i) + Decayfactor*SI_prev
 
 Frequency of each SDG, sum over for each year, call it sub index maybe, then normalize in 0-100, then decay factor from prev year?
+
+Get the index of SDGs, AI separately, and then find mediator/moderator effect in them?
+S_sdg (Only based on passages realted to SDGs), S_ai (Only based on passages mentioning AI)
+and their mult
 """
 
 # Set the decay factor for previous SI scores
