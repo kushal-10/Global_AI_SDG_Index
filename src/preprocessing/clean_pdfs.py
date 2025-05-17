@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 year_list = ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023']
 
-def rename_pdfs(dir: str = 'annual_reports'):
+def rename_pdfs(dir: str = '/annual_reports'):
     """
     Renames all the PDFs to {year}.pdf
 
