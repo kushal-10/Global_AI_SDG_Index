@@ -4,6 +4,15 @@ import os
 import logging
 from tqdm import tqdm
 
+from langdetect import detect, DetectorFactory
+DetectorFactory.seed = 0  # For consistent results across runs
+
+def detect_language(text):
+    try:
+        return detect(text)
+    except Exception:
+        return "unknown"
+
 logging.basicConfig(
     filename=os.path.join("src", "extract", "non_ascii.log"),
     level=logging.INFO,
@@ -20,9 +29,9 @@ def is_non_ascii(text, threshold=0.05):
 
 def scan_txt_files(base_dir):
     """
-    Scan each .txt file for a given base_dir for non_ascii characters
+    Scan each .txt file in base_dir for non-ASCII characters and detect language.
+    Log file path, language, and first 100 characters.
     """
-    
     non_ascii_files = []
 
     for root, _, files in tqdm(os.walk(base_dir)):
@@ -33,13 +42,15 @@ def scan_txt_files(base_dir):
                     with open(full_path, 'r', encoding='utf-8') as f:
                         content = f.read()
                     if is_non_ascii(content):
-                        non_ascii_files.append(full_path)
-                        logging.info(f"{full_path}")
+                        lang = detect_language(content)
+                        preview = content[:100].replace("\n", " ").replace("\r", "")
+                        logging.info(f"{full_path} — Detected language: {lang} — Preview: {preview}")
+                        non_ascii_files.append((full_path, lang))
                 except Exception as e:
                     print(f"Error reading {full_path}: {e}")
-    
+
     logging.info(f"Found {len(non_ascii_files)} non_ascii files. Use OCR here!")
-    print(non_ascii_files)
+    # print(non_ascii_files)
     return non_ascii_files
 
 if __name__ == '__main__':

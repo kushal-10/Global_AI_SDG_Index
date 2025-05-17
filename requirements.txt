@@ -1,0 +1,8 @@
+tqdm==4.67.1
+python-docx==1.1.2 # doc2txt
+langdetect==1.0.9 # check non-ascii/languages
+openai==1.79.0 # Translate non-en languages
+python-dotenv==1.1.0
+unidecode==1.4.0 # Translate non-en langs
+
+
