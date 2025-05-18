@@ -4,5 +4,6 @@ langdetect==1.0.9 # check non-ascii/languages
 openai==1.79.0 # Translate non-en languages
 python-dotenv==1.1.0
 unidecode==1.4.0 # Translate non-en langs
+langchain-text-splitters==0.3.8
 
 

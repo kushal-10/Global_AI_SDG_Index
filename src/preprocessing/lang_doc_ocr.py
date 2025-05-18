@@ -5,7 +5,7 @@ import os
 from tqdm import tqdm
 import logging
 
-from src.extract.check_non_ascii import scan_txt_files
+from src.preprocessing.check_non_ascii import scan_txt_files
 
 
 def get_txt_content(file: str = "temp"):

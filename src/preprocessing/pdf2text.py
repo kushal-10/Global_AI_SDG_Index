@@ -7,7 +7,7 @@ import logging
 import fitz 
 
 logging.basicConfig(
-    filename=os.path.join("src", "extract", "pdf2txt.log"),
+    filename=os.path.join("src", "preprocessing", "pdf2txt.log"),
     level=logging.INFO,
     filemode='w'
 )
