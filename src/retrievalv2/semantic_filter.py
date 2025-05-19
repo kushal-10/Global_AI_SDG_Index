@@ -5,8 +5,8 @@ Some passages may mention "AI" in a different context, ref LNT 2015 for an examp
 Cost Analysis - IP token = 1.24M approx
 
 MODEL     IP      OP
-4.1mini   0.5     0.2       0.7$   1.4
-4.1       2.5     1         3.5$   10.5
+4.1mini   1       0.7       1.7$ for 128k passes
+4.1       2.5     1         3.5$
 
 """
 
