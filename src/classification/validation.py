@@ -8,13 +8,14 @@ BASE_DIR = "annual_txts_fitz"
 classifications = []
 for dirname, _, filenames in os.walk(BASE_DIR):
     for filename in filenames:
-        if filename.endswith("classifications.json"):
+        if filename.endswith("classifications_nano.json"):
             classifications.append(os.path.join(dirname, filename))
 
 
 for classification in tqdm(classifications):
     with open(classification) as json_file:
         data = json.load(json_file)
+    print(classification)
 
     for i in range(len(data)):
         obj = data[i]["classification"]
