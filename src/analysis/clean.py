@@ -22,7 +22,22 @@ corrections = {
 
 df['Sector'] = df['Sector'].replace(corrections)
 
+drop_companies = [
+    'Mahindra & Mahindra',
+    'Adani Enterprises',
+    'HCL Technologies',
+    'UltraTech Cement',
+    'Beiersdorf'
+]
+
+print(len(df))
+
+# keep only rows that are NOT both in India and in that company list
+mask = ~((df['Company'].isin(drop_companies)))
+df = df[mask]
 
 print(df['Sector'].unique())
+print(len(df))
+
 
 df.to_csv(os.path.join("src", "results", "results.csv"))

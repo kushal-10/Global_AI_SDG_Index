@@ -206,12 +206,6 @@
 204,204,Munich RE,2020,Germany,63.39,Financials,0,0,0,0,0,0,0,2,8,0,0,0,0,0,0,1,0
 205,205,Munich RE,2018,Germany,63.39,Financials,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0
 206,206,Munich RE,2016,Germany,63.39,Financials,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,1
-207,207,Beiersdorf,2022,Germany,32.13,Consumer Staples,0,0,4,0,0,0,1,0,7,0,0,4,0,0,0,0,0
-208,208,Beiersdorf,2023,Germany,32.13,Consumer Staples,0,0,7,1,0,0,1,1,15,0,0,2,0,0,0,1,1
-209,209,Beiersdorf,2017,Germany,32.13,Consumer Staples,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-210,210,Beiersdorf,2019,Germany,32.13,Consumer Staples,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-211,211,Beiersdorf,2021,Germany,32.13,Consumer Staples,0,0,16,0,0,0,0,1,7,0,0,1,0,0,0,0,1
-212,212,Beiersdorf,2020,Germany,32.13,Consumer Staples,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,0
 213,213,Allianz,2022,Germany,106.68,Financials,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,5,0
 214,214,Allianz,2023,Germany,106.68,Financials,0,0,0,1,0,0,0,1,6,0,0,2,1,0,0,10,1
 215,215,Allianz,2015,Germany,106.68,Financials,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
@@ -384,16 +378,6 @@
 382,382,Bajaj Auto,2023,India,39.46,Consumer Discretionary,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 383,383,Bajaj Auto,2015,India,39.46,Consumer Discretionary,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 384,384,Bajaj Auto,2019,India,39.46,Consumer Discretionary,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-385,385,HCL Technologies,2014,India,56.64,Information Technology,0,0,0,0,0,0,0,2,6,0,0,0,0,0,0,0,0
-386,386,HCL Technologies,2022,India,56.64,Information Technology,0,0,2,3,1,0,2,28,61,0,1,3,0,0,0,7,5
-387,387,HCL Technologies,2023,India,56.64,Information Technology,0,0,9,19,1,0,4,66,132,2,5,5,2,0,0,15,5
-388,388,HCL Technologies,2015,India,56.64,Information Technology,0,0,0,0,0,0,0,5,11,0,0,1,0,0,0,0,0
-389,389,HCL Technologies,2017,India,56.64,Information Technology,0,0,0,1,1,0,1,20,31,0,1,0,0,0,0,1,1
-390,390,HCL Technologies,2019,India,56.64,Information Technology,0,0,1,0,0,0,0,17,32,0,1,1,0,0,0,5,0
-391,391,HCL Technologies,2021,India,56.64,Information Technology,0,0,7,1,0,0,0,22,52,0,3,1,1,0,0,5,1
-392,392,HCL Technologies,2020,India,56.64,Information Technology,0,0,1,0,0,0,0,14,32,0,1,1,0,0,0,4,0
-393,393,HCL Technologies,2018,India,56.64,Information Technology,0,0,1,0,0,0,0,15,28,0,2,0,0,0,0,1,2
-394,394,HCL Technologies,2016,India,56.64,Information Technology,0,0,0,2,0,0,0,6,13,0,0,0,0,0,0,2,0
 395,395,Tata Consultancy Services,2014,India,189.9,Information Technology,0,0,0,1,0,0,0,5,6,0,1,1,0,0,0,0,0
 396,396,Tata Consultancy Services,2022,India,189.9,Information Technology,0,1,7,5,0,0,7,29,61,0,8,10,8,0,0,6,0
 397,397,Tata Consultancy Services,2023,India,189.9,Information Technology,0,0,6,19,2,0,3,41,74,1,4,9,5,0,0,9,3
@@ -488,19 +472,6 @@
 486,486,NTPC Limited,2020,India,45.66,Energy,0,0,0,1,0,0,5,2,9,0,0,2,1,0,0,0,0
 487,487,NTPC Limited,2018,India,45.66,Energy,0,0,0,0,0,0,2,0,1,0,0,1,0,0,0,0,0
 488,488,NTPC Limited,2016,India,45.66,Energy,0,0,0,0,0,0,2,0,3,0,0,1,0,0,0,0,0
-489,489,Mahindra & Mahindra,2022,India,42.44,Consumer Discretionary,0,1,0,8,2,0,0,3,13,0,1,3,0,0,0,1,0
-490,490,Mahindra & Mahindra,2023,India,42.44,Consumer Discretionary,0,3,0,5,1,0,1,7,21,0,2,3,0,0,0,0,0
-491,491,Mahindra & Mahindra,2015,India,42.44,Consumer Discretionary,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-492,492,Mahindra & Mahindra,2017,India,42.44,Consumer Discretionary,0,2,0,0,0,0,3,1,6,0,2,1,1,0,0,0,0
-493,493,Mahindra & Mahindra,2021,India,42.44,Consumer Discretionary,0,5,0,0,0,0,0,0,8,0,0,2,0,0,0,0,0
-494,494,Mahindra & Mahindra,2020,India,42.44,Consumer Discretionary,0,5,0,3,2,0,1,2,8,2,0,3,0,0,0,0,0
-495,495,Mahindra & Mahindra,2018,India,42.44,Consumer Discretionary,0,2,0,0,0,0,0,5,10,0,1,2,0,0,0,0,0
-496,496,Mahindra & Mahindra,2016,India,42.44,Consumer Discretionary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-497,497,Adani Enterprises,2022,India,43.12,Materials,0,1,0,0,0,0,0,2,7,0,0,0,0,0,0,2,0
-498,498,Adani Enterprises,2023,India,43.12,Materials,0,0,0,1,0,1,3,6,11,0,2,0,1,0,0,5,0
-499,499,Adani Enterprises,2019,India,43.12,Materials,0,0,0,2,0,1,0,0,1,0,0,1,0,0,0,0,0
-500,500,Adani Enterprises,2021,India,43.12,Materials,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0
-501,501,Adani Enterprises,2020,India,43.12,Materials,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,1,0
 502,502,ITC,2014,India,73.68,Consumer Staples,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
 503,503,ITC,2022,India,73.68,Consumer Staples,0,3,1,0,0,0,0,9,17,0,0,7,0,0,0,0,0
 504,504,ITC,2023,India,73.68,Consumer Staples,0,5,2,1,0,0,2,11,17,1,0,7,2,0,0,1,0
@@ -515,12 +486,6 @@
 513,513,Life Insurance Corporation of India,2019,India,89.05,Financials,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
 514,514,Life Insurance Corporation of India,2021,India,89.05,Financials,0,0,0,0,0,0,0,1,3,1,0,0,0,0,0,2,0
 515,515,Life Insurance Corporation of India,2020,India,89.05,Financials,0,0,1,0,0,0,0,1,3,0,0,0,0,0,0,0,0
-516,516,UltraTech Cement,2022,India,39.27,Industries,0,2,2,1,1,1,1,3,8,0,0,3,2,0,0,1,0
-517,517,UltraTech Cement,2023,India,39.27,Industries,0,0,0,1,0,0,0,4,6,0,0,4,0,0,0,0,0
-518,518,UltraTech Cement,2019,India,39.27,Industries,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
-519,519,UltraTech Cement,2021,India,39.27,Industries,0,0,0,0,0,0,1,5,7,0,0,2,1,0,0,0,0
-520,520,UltraTech Cement,2020,India,39.27,Industries,0,0,1,0,0,0,1,1,5,0,1,3,1,0,0,0,0
-521,521,UltraTech Cement,2018,India,39.27,Industries,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
 522,522,Infosys,2014,India,90.16,Information Technology,0,0,0,0,0,0,0,5,5,0,0,0,0,0,0,0,0
 523,523,Infosys,2022,India,90.16,Information Technology,0,0,3,4,0,0,0,25,36,0,0,0,0,0,0,5,1
 524,524,Infosys,2023,India,90.16,Information Technology,0,0,3,7,0,0,0,40,55,0,1,1,1,0,0,6,3

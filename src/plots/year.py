@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 
-df = pd.read_csv(os.path.join("src", "results", "frequency_expanded.csv"), index_col=0)
+df = pd.read_csv(os.path.join("src", "results", "results.csv"), index_col=0)
 
 id_cols = ['Company','Year','Country','Revenue','Sector']
 df_long = df.melt(id_vars=id_cols,
@@ -47,21 +47,43 @@ def bar_over_years():
         .sum()
     )
 
+    bar_data['GOAL'] = bar_data['GOAL'].astype(str)
+
     fig2 = px.bar(
         bar_data,
         x='Year',
         y='COUNT',
         color='GOAL',
-        barmode='group',
-        title='Yearly Goal Counts (Grouped by Goal)'
+        barmode='stack',  # ← stack instead of group
+        title='Total SDG mentions over the years',
+        color_discrete_sequence=px.colors.qualitative.Vivid,
     )
-    # ensure one tick per year
+
+    # one tick per year
     fig2.update_layout(xaxis=dict(dtick=1))
+
     fig2.show()
 
 
+def plot_years():
+    # count how many records you have for each year
+    year_counts = df_long['Year'].value_counts().sort_index()
+
+    # build the bar chart
+    fig = px.bar(
+        x=year_counts.index,  # Years on the x-axis
+        y=year_counts.values,  # Their counts on the y-axis
+        labels={'x': 'Year', 'y': 'Count'},
+        title='Total Records per Year'
+    )
+
+    # force one tick per year
+    fig.update_layout(xaxis=dict(dtick=1))
+
+    fig.show()
 
 if __name__ == '__main__':
     # goal_over_years()
     # per_goal_over_years()
     bar_over_years()
+    # plot_years()
