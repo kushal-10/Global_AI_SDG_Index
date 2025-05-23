@@ -16,6 +16,21 @@ goals_df.columns = [f'Goal_{col}' for col in goals_df.columns]
 # 5. Drop the old Goals column and concat the new ones
 df = pd.concat([df.drop('Goals', axis=1), goals_df], axis=1)
 
+corrections = {
+    "Consumer Staplers":    "Consumer Staples",
+    "Consumer Stapler":     "Consumer Staples",
+    "Industrials":          "Industries",
+    "Financial Service":    "Financials",
+    "FInancial Service":    "Financials",
+    "Information Tech":     "Information Technology",
+}
+
+df['Sector'] = df['Sector'].replace(corrections)
+
+
+
+# df = df.drop('Goal_0',axis=1)
+df.to_csv('src/results/results_0.csv', index=False)
+
 df = df.drop('Goal_0',axis=1)
-# 6. Save back to CSV (or overwrite)
-df.to_csv('src/results/frequency_expanded.csv', index=False)
+df.to_csv('src/results/results.csv', index=False)

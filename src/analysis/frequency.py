@@ -35,9 +35,16 @@ def get_majority_vote(base_data, mini_data, nano_data) -> dict:
         mini_cleaned = merge_subtargets(mini_cls)
         nano_cleaned = merge_subtargets(nano_cls)
 
+        # If 0 + other SDGs, then set SDG 0 to 0
         for sdg in result:
             if (sdg in base_cleaned and sdg in mini_cleaned) or (sdg in mini_cleaned and sdg in nano_cleaned) or (sdg in nano_cleaned and sdg in base_cleaned):
+                # Ensure we have separate GOAL 0 cls for a passage, so no combinations of 0 + 1-17
+                if sdg != "0":
+                    if result["0"] != 0:
+                        result["0"] = 0
+
                 result[sdg] += 1
+
 
     return result
 
@@ -71,6 +78,11 @@ def get_frequency():
                                 year = splits[-2]
                                 company_splits = splits[-3].split("_")
                                 company_name = company_splits[0].split(".")[-1]
+
+
+
+
+
                                 company_revenue = company_splits[1]
                                 company_revenue = company_revenue.replace("$", "")
                                 if "T" in company_revenue:
@@ -81,7 +93,15 @@ def get_frequency():
                                     company_revenue = company_revenue.replace("B", "")
                                     company_revenue = company_revenue.strip()
                                     company_revenue = float(company_revenue)
+
+
                                 company_sector = company_splits[2]
+
+                                # Fix EON data
+                                if company_name == "E":
+                                    company_name = "E.ON"
+                                    company_revenue = 38.46
+                                    company_sector = "Energy"
 
                                 FIRM.append(company_name)
                                 YEAR.append(year)

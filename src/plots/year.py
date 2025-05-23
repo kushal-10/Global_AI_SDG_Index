@@ -83,7 +83,7 @@ def plot_years():
     fig.show()
 
 if __name__ == '__main__':
-    # goal_over_years()
-    # per_goal_over_years()
+    goal_over_years()
+    per_goal_over_years()
     bar_over_years()
-    # plot_years()
+    plot_years()

@@ -1,40 +1,29 @@
-import plotly.express as px
 import pandas as pd
-import os
+import plotly.express as px
 
-# 1. load and reshape (as before)
-df = pd.read_csv("src/results/results.csv", index_col=0)
-id_cols = ['Company','Year','Country','Revenue','Sector']
-df_long = df.melt(id_vars=id_cols,
-                  value_vars=[f'Goal_{i}' for i in range(1,18)],
-                  var_name='GOAL',
-                  value_name='COUNT')
-df_long['GOAL'] = df_long['GOAL'].str.replace('Goal_','').astype(int)
+# 1. Load data
+df = pd.read_csv('src/results/results.csv')
 
-# 2. sum per Year/Country
-yearly_ctry = (
-    df_long
-    .groupby(['Year','Country'], as_index=False)['COUNT']
-    .sum()
-)
+# 2. Compute total_goals per firm
+goal_cols = [c for c in df.columns if c.startswith('Goal_')]
+df['total_goals'] = df[goal_cols].sum(axis=1)
 
-# 3. average across years
-avg_ctry = (
-    yearly_ctry
-    .groupby('Country', as_index=False)['COUNT']
-    .mean()
-    .rename(columns={'COUNT':'AVG_MENTIONS'})
-    .sort_values('AVG_MENTIONS', ascending=False)
-)
+# 3. Aggregate: average total_goals by Year and Country
+grouped = df.groupby(['Year', 'Country'])
+avg_goals = (grouped['total_goals'].sum() / grouped.size()).reset_index(name='avg_goals')
 
-# 4. plot
+# 4. Pivot to wide format
+avg_pivot = avg_goals.pivot(index='Year', columns='Country', values='avg_goals').fillna(0).reset_index()
+
+# 5. Plotly stacked bar chart
 fig = px.bar(
-    avg_ctry,
-    x='Country',
-    y='AVG_MENTIONS',
-    title='Average Annual Mentions by Country',
-    color='Country',
-    color_discrete_sequence=px.colors.qualitative.Dark24
+    avg_pivot,
+    x='Year',
+    y=[c for c in avg_pivot.columns if c != 'Year'],
+    labels={'value': 'Avg Total Goals per Firm', 'variable': 'Country'},
+    title='Average Total Goals by Country and Year',
+    barmode='stack'
 )
-fig.update_layout(xaxis_tickangle=-45)
+
+fig.update_layout(xaxis=dict(dtick=1))
 fig.show()
