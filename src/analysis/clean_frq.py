@@ -30,7 +30,8 @@ df['Sector'] = df['Sector'].replace(corrections)
 
 
 # df = df.drop('Goal_0',axis=1)
-df.to_csv('src/results/results_0.csv', index=False)
+df.rename(columns={'Goal_0': 'Unclassified'}, inplace=True)
+df.to_csv('src/results/results_unclassified.csv', index=False)
 
-df = df.drop('Goal_0',axis=1)
+df = df.drop('Unclassified',axis=1)
 df.to_csv('src/results/results.csv', index=False)

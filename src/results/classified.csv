@@ -1,0 +1,696 @@
+,Company,Year,Country,Unclassified,Classified,Regex
+0,Amazon,2014,USA,0,1,1
+1,Amazon,2023,USA,11,19,36
+2,Amazon,2015,USA,0,1,2
+3,Amazon,2017,USA,1,4,10
+4,Amazon,2019,USA,0,1,2
+5,Amazon,2018,USA,3,3,11
+6,Amazon,2016,USA,2,3,5
+7,APPLE,2022,USA,0,0,5
+8,APPLE,2023,USA,0,1,7
+9,APPLE,2017,USA,0,0,1
+10,APPLE,2019,USA,0,0,5
+11,APPLE,2021,USA,0,0,4
+12,APPLE,2020,USA,0,0,4
+13,APPLE,2018,USA,0,0,5
+14,Exxon Mobil,2023,USA,0,0,2
+15,Exxon Mobil,2019,USA,0,2,2
+16,Exxon Mobil,2021,USA,0,0,2
+17,Exxon Mobil,2020,USA,0,0,1
+18,Meta Platforms (Facebook),2022,USA,9,15,55
+19,Meta Platforms (Facebook),2023,USA,22,27,78
+20,Meta Platforms (Facebook),2015,USA,1,1,2
+21,Meta Platforms (Facebook),2017,USA,0,2,2
+22,Meta Platforms (Facebook),2019,USA,4,6,15
+23,Meta Platforms (Facebook),2021,USA,2,8,33
+24,Meta Platforms (Facebook),2020,USA,1,10,16
+25,Meta Platforms (Facebook),2018,USA,1,2,11
+26,Meta Platforms (Facebook),2016,USA,0,2,2
+27,Berkshire Hathaway,2014,USA,0,0,2
+28,Berkshire Hathaway,2022,USA,0,0,4
+29,Berkshire Hathaway,2023,USA,1,0,4
+30,Berkshire Hathaway,2015,USA,0,0,1
+31,Berkshire Hathaway,2017,USA,0,0,4
+32,Berkshire Hathaway,2019,USA,0,0,3
+33,Berkshire Hathaway,2021,USA,0,0,4
+34,Berkshire Hathaway,2020,USA,0,0,3
+35,Berkshire Hathaway,2018,USA,0,0,3
+36,Berkshire Hathaway,2016,USA,0,0,2
+37,NVIDIA,2014,USA,3,13,16
+38,NVIDIA,2022,USA,38,87,134
+39,NVIDIA,2023,USA,50,139,200
+40,NVIDIA,2015,USA,5,27,34
+41,NVIDIA,2017,USA,11,56,71
+42,NVIDIA,2019,USA,15,70,95
+43,NVIDIA,2021,USA,21,75,105
+44,NVIDIA,2020,USA,20,81,109
+45,NVIDIA,2018,USA,12,69,89
+46,NVIDIA,2016,USA,12,44,56
+47,Walmart,2022,USA,0,0,9
+48,Walmart,2023,USA,0,0,9
+49,Walmart,2019,USA,0,2,7
+50,Walmart,2021,USA,2,0,29
+51,Walmart,2020,USA,0,0,5
+52,Walmart,2018,USA,0,0,6
+53,Johnson&Johnson,2022,USA,3,2,7
+54,Johnson&Johnson,2023,USA,1,2,8
+55,Johnson&Johnson,2015,USA,0,2,2
+56,Johnson&Johnson,2017,USA,0,0,2
+57,Johnson&Johnson,2019,USA,1,3,6
+58,Johnson&Johnson,2021,USA,2,5,10
+59,Johnson&Johnson,2020,USA,1,2,4
+60,Johnson&Johnson,2018,USA,0,9,11
+61,Procter&Gamble,2022,USA,0,1,7
+62,Procter&Gamble,2023,USA,1,0,7
+63,Procter&Gamble,2015,USA,0,0,4
+64,Procter&Gamble,2019,USA,1,0,7
+65,Procter&Gamble,2021,USA,0,0,5
+66,Procter&Gamble,2020,USA,0,2,7
+67,Procter&Gamble,2018,USA,0,3,9
+68,United Health,2014,USA,0,0,1
+69,United Health,2022,USA,2,6,8
+70,United Health,2023,USA,2,15,17
+71,United Health,2019,USA,0,0,1
+72,United Health,2021,USA,0,0,1
+73,United Health,2020,USA,0,0,1
+74,United Health,2018,USA,0,0,1
+75,Morgan&Chase,2014,USA,0,0,8
+76,Morgan&Chase,2022,USA,2,12,24
+77,Morgan&Chase,2023,USA,7,19,33
+78,Morgan&Chase,2015,USA,1,3,9
+79,Morgan&Chase,2017,USA,1,3,12
+80,Morgan&Chase,2019,USA,1,1,10
+81,Morgan&Chase,2021,USA,2,6,14
+82,Morgan&Chase,2020,USA,0,12,17
+83,Morgan&Chase,2018,USA,3,9,21
+84,Morgan&Chase,2016,USA,2,9,16
+85,Mastercard,2014,USA,0,0,4
+86,Mastercard,2022,USA,0,11,15
+87,Mastercard,2023,USA,4,26,34
+88,Mastercard,2015,USA,0,1,4
+89,Mastercard,2017,USA,0,6,8
+90,Mastercard,2019,USA,0,6,10
+91,Mastercard,2021,USA,1,10,14
+92,Mastercard,2020,USA,0,9,11
+93,Mastercard,2018,USA,0,6,8
+94,Mastercard,2016,USA,0,2,4
+95,Eli Lilly,2014,USA,0,0,4
+96,Eli Lilly,2022,USA,0,0,7
+97,Eli Lilly,2023,USA,6,2,15
+98,Eli Lilly,2015,USA,0,0,6
+99,Eli Lilly,2017,USA,0,0,10
+100,Eli Lilly,2019,USA,0,0,6
+101,Eli Lilly,2021,USA,0,0,7
+102,Eli Lilly,2020,USA,0,0,9
+103,Eli Lilly,2018,USA,0,0,6
+104,Eli Lilly,2016,USA,0,0,5
+105,Oracle,2014,USA,0,0,17
+106,Oracle,2022,USA,0,16,28
+107,Oracle,2023,USA,1,21,29
+108,Oracle,2017,USA,0,5,11
+109,Oracle,2019,USA,0,11,26
+110,Oracle,2021,USA,1,15,28
+111,Oracle,2020,USA,0,11,24
+112,Oracle,2018,USA,1,3,23
+113,Oracle,2016,USA,0,0,17
+114,Microsoft,2014,USA,1,4,5
+115,Microsoft,2022,USA,1,29,39
+116,Microsoft,2023,USA,10,71,88
+117,Microsoft,2015,USA,1,5,6
+118,Microsoft,2017,USA,5,18,24
+119,Microsoft,2019,USA,6,19,33
+120,Microsoft,2021,USA,2,24,34
+121,Microsoft,2020,USA,5,25,38
+122,Microsoft,2018,USA,4,24,36
+123,Microsoft,2016,USA,2,5,7
+124,Costco,2014,USA,0,0,13
+125,Costco,2022,USA,0,0,23
+126,Costco,2023,USA,0,0,12
+127,Costco,2015,USA,0,0,12
+128,Costco,2017,USA,0,0,13
+129,Costco,2019,USA,0,0,20
+130,Costco,2021,USA,0,0,27
+131,Costco,2020,USA,0,0,24
+132,Costco,2018,USA,0,0,18
+133,Visa,2014,USA,0,1,4
+134,Visa,2022,USA,0,0,9
+135,Visa,2023,USA,3,8,20
+136,Visa,2015,USA,0,0,6
+137,Visa,2017,USA,0,7,15
+138,Visa,2019,USA,0,6,15
+139,Visa,2021,USA,0,0,8
+140,Visa,2020,USA,0,4,13
+141,Visa,2018,USA,0,5,16
+142,Visa,2016,USA,0,0,8
+143,Broadcom,2014,USA,0,0,3
+144,Broadcom,2022,USA,0,5,8
+145,Broadcom,2023,USA,1,4,8
+146,Broadcom,2015,USA,0,0,11
+147,Broadcom,2017,USA,0,0,10
+148,Broadcom,2019,USA,0,0,4
+149,Broadcom,2021,USA,0,4,6
+150,Broadcom,2020,USA,0,3,6
+151,Broadcom,2018,USA,0,0,10
+152,Broadcom,2016,USA,0,0,12
+153,Alphabet(Google),2014,USA,0,0,1
+154,Alphabet(Google),2022,USA,10,41,59
+155,Alphabet(Google),2023,USA,28,50,85
+156,Alphabet(Google),2015,USA,2,6,10
+157,Alphabet(Google),2017,USA,1,3,4
+158,Alphabet(Google),2019,USA,5,6,17
+159,Alphabet(Google),2021,USA,16,5,32
+160,Alphabet(Google),2020,USA,6,10,22
+161,Alphabet(Google),2018,USA,3,4,13
+162,Alphabet(Google),2016,USA,1,8,9
+163,Tesla,2022,USA,0,7,10
+164,Tesla,2023,USA,1,9,14
+165,Tesla,2017,USA,0,2,9
+166,Tesla,2019,USA,0,2,5
+167,Tesla,2021,USA,0,6,9
+168,Tesla,2020,USA,0,2,38
+169,Tesla,2018,USA,0,1,4
+170,Tesla,2016,USA,0,1,4
+171,Adidas,2014,Germany,0,0,7
+172,Adidas,2022,Germany,0,0,7
+173,Adidas,2023,Germany,1,3,10
+174,Adidas,2015,Germany,0,0,7
+175,Adidas,2017,Germany,0,2,6
+176,Adidas,2019,Germany,0,0,3
+177,Adidas,2021,Germany,0,0,8
+178,Adidas,2020,Germany,0,0,5
+179,Adidas,2016,Germany,0,0,6
+180,Siemens Healthineers,2014,Germany,0,0,2
+181,Siemens Healthineers,2022,Germany,1,20,26
+182,Siemens Healthineers,2023,Germany,5,11,25
+183,Siemens Healthineers,2017,Germany,0,0,1
+184,Siemens Healthineers,2019,Germany,0,0,3
+185,Siemens Healthineers,2021,Germany,2,13,22
+186,Siemens Healthineers,2020,Germany,0,13,17
+187,Siemens Healthineers,2018,Germany,0,0,1
+188,BMW,2014,Germany,0,0,1
+189,BMW,2022,Germany,1,6,8
+190,BMW,2017,Germany,1,2,5
+191,BMW,2019,Germany,0,3,6
+192,BMW,2021,Germany,0,9,12
+193,BMW,2020,Germany,0,8,11
+194,BMW,2018,Germany,0,7,9
+195,BMW,2016,Germany,0,1,2
+196,BASF,2014,Germany,0,0,2
+197,BASF,2022,Germany,0,7,10
+198,BASF,2023,Germany,0,8,11
+199,BASF,2019,Germany,0,3,6
+200,BASF,2021,Germany,0,3,5
+201,BASF,2020,Germany,0,7,8
+202,BASF,2018,Germany,0,2,5
+203,Infineon,2014,Germany,0,6,24
+204,Infineon,2022,Germany,4,4,24
+205,Infineon,2023,Germany,5,16,44
+206,Infineon,2015,Germany,1,7,45
+207,Infineon,2017,Germany,2,11,41
+208,Infineon,2019,Germany,4,15,47
+209,Infineon,2021,Germany,7,23,61
+210,Infineon,2020,Germany,5,20,53
+211,Infineon,2018,Germany,6,15,44
+212,Infineon,2016,Germany,2,5,31
+213,DHL Group,2014,Germany,0,0,2
+214,DHL Group,2022,Germany,0,1,2
+215,DHL Group,2023,Germany,1,2,5
+216,DHL Group,2015,Germany,0,0,1
+217,DHL Group,2017,Germany,1,1,2
+218,DHL Group,2019,Germany,0,3,4
+219,DHL Group,2021,Germany,1,0,3
+220,DHL Group,2020,Germany,0,1,3
+221,DHL Group,2018,Germany,0,1,1
+222,DHL Group,2016,Germany,0,1,1
+223,Mercedes-Benz,2014,Germany,0,1,4
+224,Mercedes-Benz,2022,Germany,0,3,11
+225,Mercedes-Benz,2023,Germany,0,4,12
+226,Mercedes-Benz,2015,Germany,0,5,10
+227,Mercedes-Benz,2017,Germany,0,3,8
+228,Mercedes-Benz,2019,Germany,1,17,26
+229,Mercedes-Benz,2021,Germany,0,2,8
+230,Mercedes-Benz,2020,Germany,0,6,14
+231,Mercedes-Benz,2018,Germany,2,11,21
+232,Mercedes-Benz,2016,Germany,0,3,10
+233,SAP,2014,Germany,1,0,11
+234,SAP,2022,Germany,7,11,27
+235,SAP,2023,Germany,18,47,77
+236,SAP,2015,Germany,2,10,19
+237,SAP,2017,Germany,7,36,56
+238,SAP,2019,Germany,7,34,51
+239,SAP,2021,Germany,5,23,38
+240,SAP,2020,Germany,10,37,60
+241,SAP,2018,Germany,6,68,86
+242,SAP,2016,Germany,6,12,29
+243,Hannover Rück,2014,Germany,0,0,1
+244,Hannover Rück,2022,Germany,0,0,3
+245,Hannover Rück,2023,Germany,2,9,15
+246,Hannover Rück,2015,Germany,0,0,1
+247,Hannover Rück,2017,Germany,0,0,1
+248,Hannover Rück,2019,Germany,0,0,1
+249,Hannover Rück,2021,Germany,0,0,2
+250,Hannover Rück,2020,Germany,0,0,2
+251,Hannover Rück,2018,Germany,0,0,1
+252,Hannover Rück,2016,Germany,0,0,1
+253,Siemens,2014,Germany,0,0,11
+254,Siemens,2022,Germany,2,9,19
+255,Siemens,2023,Germany,3,12,22
+256,Siemens,2015,Germany,0,0,9
+257,Siemens,2017,Germany,2,4,14
+258,Siemens,2019,Germany,1,15,25
+259,Siemens,2021,Germany,2,13,21
+260,Siemens,2020,Germany,1,9,15
+261,Siemens,2018,Germany,1,5,14
+262,Siemens,2016,Germany,1,2,13
+263,Deutsche Börse,2014,Germany,0,1,1
+264,Deutsche Börse,2022,Germany,1,1,4
+265,Deutsche Börse,2023,Germany,4,4,10
+266,Deutsche Börse,2015,Germany,1,0,1
+267,Deutsche Börse,2017,Germany,4,5,10
+268,Deutsche Börse,2019,Germany,1,1,2
+269,Deutsche Börse,2021,Germany,1,1,7
+270,Deutsche Börse,2020,Germany,2,2,6
+271,Deutsche Börse,2018,Germany,1,4,6
+272,Deutsche Börse,2016,Germany,1,1,2
+273,Porsche,2014,Germany,0,0,6
+274,Porsche,2022,Germany,2,9,15
+275,Porsche,2023,Germany,2,13,17
+276,Porsche,2015,Germany,0,0,1
+277,Porsche,2017,Germany,0,2,2
+278,Porsche,2019,Germany,0,4,4
+279,Porsche,2021,Germany,1,12,22
+280,Porsche,2020,Germany,1,18,19
+281,Porsche,2018,Germany,0,3,3
+282,Merck,2014,Germany,1,0,2
+283,Merck,2022,Germany,0,7,13
+284,Merck,2023,Germany,9,29,39
+285,Merck,2017,Germany,1,2,5
+286,Merck,2019,Germany,0,9,9
+287,Merck,2021,Germany,1,4,9
+288,Merck,2020,Germany,0,13,13
+289,Merck,2018,Germany,1,3,6
+290,Merck,2016,Germany,0,0,4
+291,Munich RE,2014,Germany,0,0,1
+292,Munich RE,2022,Germany,1,13,18
+293,Munich RE,2023,Germany,2,17,37
+294,Munich RE,2015,Germany,0,0,1
+295,Munich RE,2017,Germany,1,2,3
+296,Munich RE,2019,Germany,3,4,11
+297,Munich RE,2021,Germany,1,10,14
+298,Munich RE,2020,Germany,1,8,10
+299,Munich RE,2018,Germany,1,3,4
+300,Munich RE,2016,Germany,0,3,3
+301,Beiersdorf,2014,Germany,0,0,3
+302,Beiersdorf,2022,Germany,0,10,15
+303,Beiersdorf,2023,Germany,0,18,21
+304,Beiersdorf,2015,Germany,0,0,3
+305,Beiersdorf,2017,Germany,0,1,3
+306,Beiersdorf,2019,Germany,0,1,3
+307,Beiersdorf,2021,Germany,0,19,23
+308,Beiersdorf,2020,Germany,0,3,8
+309,Beiersdorf,2018,Germany,0,0,1
+310,Beiersdorf,2016,Germany,0,0,2
+311,Allianz,2014,Germany,0,0,5
+312,Allianz,2022,Germany,2,5,19
+313,Allianz,2023,Germany,0,15,47
+314,Allianz,2015,Germany,0,1,6
+315,Allianz,2017,Germany,0,0,3
+316,Allianz,2019,Germany,1,0,5
+317,Allianz,2021,Germany,1,5,13
+318,Allianz,2020,Germany,0,2,8
+319,Allianz,2018,Germany,1,0,5
+320,Allianz,2016,Germany,1,0,5
+321,Deutsche Telekom,2014,Germany,0,1,4
+322,Deutsche Telekom,2022,Germany,4,28,38
+323,Deutsche Telekom,2023,Germany,10,62,76
+324,Deutsche Telekom,2015,Germany,1,4,12
+325,Deutsche Telekom,2017,Germany,1,22,42
+326,Deutsche Telekom,2019,Germany,2,31,47
+327,Deutsche Telekom,2021,Germany,3,27,46
+328,Deutsche Telekom,2020,Germany,4,32,47
+329,Deutsche Telekom,2016,Germany,1,13,21
+330,Henkel,2022,Germany,0,1,1
+331,Henkel,2023,Germany,2,2,4
+332,Henkel,2017,Germany,0,3,3
+333,Henkel,2019,Germany,0,2,2
+334,Henkel,2021,Germany,1,6,7
+335,Henkel,2020,Germany,1,5,6
+336,Henkel,2018,Germany,0,1,1
+337,Henkel,2016,Germany,0,0,1
+338,EON,2014,Germany,0,1,2
+339,EON,2022,Germany,0,4,7
+340,EON,2023,Germany,1,5,16
+341,EON,2015,Germany,0,1,1
+342,EON,2017,Germany,0,1,2
+343,EON,2019,Germany,1,1,4
+344,EON,2021,Germany,1,2,9
+345,EON,2020,Germany,1,4,7
+346,EON,2018,Germany,0,3,3
+347,EON,2016,Germany,0,0,3
+348,Volkswagen,2014,Germany,0,4,6
+349,Volkswagen,2022,Germany,11,10,43
+350,Volkswagen,2023,Germany,8,21,46
+351,Volkswagen,2015,Germany,0,5,9
+352,Volkswagen,2017,Germany,0,12,13
+353,Volkswagen,2019,Germany,1,11,13
+354,Volkswagen,2021,Germany,6,13,28
+355,Volkswagen,2020,Germany,8,11,27
+356,Volkswagen,2018,Germany,0,10,10
+357,Volkswagen,2016,Germany,4,14,21
+358,China Iife Insurance,2022,China,0,1,2
+359,China Iife Insurance,2023,China,0,2,2
+360,China Iife Insurance,2017,China,1,2,3
+361,China Iife Insurance,2019,China,0,6,6
+362,China Iife Insurance,2021,China,0,5,5
+363,China Iife Insurance,2020,China,1,7,8
+364,China Iife Insurance,2018,China,0,3,3
+365,China Iife Insurance,2016,China,0,1,1
+366,Tencent,2022,China,2,7,9
+367,Tencent,2023,China,3,7,10
+368,Tencent,2017,China,2,7,12
+369,Tencent,2019,China,2,5,10
+370,Tencent,2021,China,2,6,9
+371,Tencent,2020,China,2,12,16
+372,Tencent,2018,China,4,6,11
+373,Tencent,2016,China,1,1,4
+374,Kweichow Moutai,2023,China,0,1,4
+375,Kweichow Moutai,2019,China,0,0,2
+376,Kweichow Moutai,2021,China,0,0,2
+377,Kweichow Moutai,2020,China,0,0,1
+378,Agricultural Bank of China,2014,China,0,0,1
+379,Agricultural Bank of China,2022,China,0,3,3
+380,Agricultural Bank of China,2023,China,0,6,7
+381,Agricultural Bank of China,2017,China,0,3,3
+382,Agricultural Bank of China,2019,China,0,4,4
+383,Agricultural Bank of China,2021,China,0,2,5
+384,Agricultural Bank of China,2020,China,0,6,6
+385,Agricultural Bank of China,2018,China,0,6,6
+386,Sinopec,2019,China,0,1,1
+387,PetroChina,2022,China,0,0,1
+388,PetroChina,2017,China,0,0,1
+389,PetroChina,2019,China,0,0,1
+390,PetroChina,2021,China,0,0,1
+391,PetroChina,2020,China,0,0,1
+392,PetroChina,2018,China,0,0,1
+393,PetroChina,2016,China,0,2,3
+394,Meituan,2022,China,2,2,9
+395,Meituan,2023,China,3,4,12
+396,Meituan,2019,China,1,4,10
+397,Meituan,2021,China,3,3,11
+398,Meituan,2020,China,2,3,9
+399,Meituan,2018,China,2,2,8
+400,China Mobile,2014,China,1,4,6
+401,China Mobile,2022,China,3,11,18
+402,China Mobile,2023,China,8,21,30
+403,China Mobile,2015,China,0,3,4
+404,China Mobile,2017,China,1,4,6
+405,China Mobile,2019,China,4,8,16
+406,China Mobile,2021,China,6,11,18
+407,China Mobile,2020,China,4,10,17
+408,China Mobile,2018,China,4,6,12
+409,China Mobile,2016,China,0,1,3
+410,CATL,2022,China,1,1,4
+411,CATL,2023,China,0,4,5
+412,Alibaba,2022,China,8,22,49
+413,Alibaba,2023,China,16,31,73
+414,Alibaba,2015,China,0,6,15
+415,Alibaba,2021,China,5,25,53
+416,Alibaba,2020,China,4,18,36
+417,CNOOC,2022,China,0,1,2
+418,CNOOC,2023,China,0,0,1
+419,CNOOC,2017,China,0,0,2
+420,CNOOC,2019,China,0,0,1
+421,CNOOC,2021,China,0,0,1
+422,CNOOC,2020,China,0,0,2
+423,CNOOC,2018,China,1,1,7
+424,CNOOC,2016,China,0,0,1
+425,ICBC,2022,China,0,7,9
+426,ICBC,2023,China,1,8,12
+427,ICBC,2017,China,0,4,5
+428,ICBC,2019,China,0,10,13
+429,ICBC,2021,China,0,7,9
+430,ICBC,2020,China,1,6,10
+431,ICBC,2018,China,2,6,9
+432,ICBC,2016,China,1,1,3
+433,China Yangtze Power,2022,China,1,0,1
+434,China Yangtze Power,2023,China,0,1,1
+435,China Yangtze Power,2021,China,0,0,2
+436,China Yangtze Power,2020,China,0,0,1
+437,PingAn Insurance,2014,China,0,0,3
+438,PingAn Insurance,2022,China,1,29,32
+439,PingAn Insurance,2023,China,0,23,24
+440,PingAn Insurance,2015,China,0,1,3
+441,PingAn Insurance,2017,China,0,41,43
+442,PingAn Insurance,2019,China,2,47,51
+443,PingAn Insurance,2021,China,3,55,61
+444,PingAn Insurance,2020,China,0,71,75
+445,PingAn Insurance,2018,China,1,45,50
+446,PingAn Insurance,2016,China,0,41,43
+447,CM Bank,2022,China,0,8,10
+448,CM Bank,2023,China,1,12,15
+449,CM Bank,2017,China,1,13,16
+450,CM Bank,2019,China,0,8,9
+451,CM Bank,2021,China,0,15,17
+452,CM Bank,2020,China,0,16,17
+453,CM Bank,2018,China,1,7,9
+454,CM Bank,2016,China,0,6,6
+455,China Construction Bank,2022,China,0,21,27
+456,China Construction Bank,2023,China,2,16,23
+457,China Construction Bank,2015,China,0,0,1
+458,China Construction Bank,2017,China,0,5,7
+459,China Construction Bank,2019,China,1,11,14
+460,China Construction Bank,2021,China,0,9,10
+461,China Construction Bank,2020,China,1,8,12
+462,China Construction Bank,2018,China,1,21,22
+463,China Construction Bank,2016,China,1,1,3
+464,China Shenhua Energy,2021,China,0,0,1
+465,China Shenhua Energy,2020,China,0,0,1
+466,Pinduoduo,2022,China,1,2,33
+467,Pinduoduo,2023,China,1,2,30
+468,Pinduoduo,2019,China,2,9,25
+469,Pinduoduo,2021,China,0,2,19
+470,Pinduoduo,2020,China,1,2,21
+471,Pinduoduo,2018,China,1,9,18
+472,Bank of China,2014,China,0,0,1
+473,Bank of China,2022,China,1,7,10
+474,Bank of China,2023,China,1,4,12
+475,Bank of China,2015,China,0,0,1
+476,Bank of China,2017,China,0,6,7
+477,Bank of China,2019,China,0,7,11
+478,Bank of China,2021,China,0,6,9
+479,Bank of China,2020,China,0,9,12
+480,Bank of China,2018,China,0,10,11
+481,Bank of China,2016,China,0,0,1
+482,BYD,2019,China,1,0,1
+483,BYD,2018,China,1,3,4
+484,Reliance Industries,2014,India,0,0,3
+485,Reliance Industries,2022,India,2,45,63
+486,Reliance Industries,2023,India,1,50,58
+487,Reliance Industries,2015,India,0,0,6
+488,Reliance Industries,2017,India,1,14,24
+489,Reliance Industries,2019,India,0,43,51
+490,Reliance Industries,2021,India,2,32,42
+491,Reliance Industries,2020,India,0,49,59
+492,Reliance Industries,2018,India,1,31,41
+493,Reliance Industries,2016,India,0,3,15
+494,Kotak Mahindra Bank,2014,India,0,0,10
+495,Kotak Mahindra Bank,2022,India,6,17,41
+496,Kotak Mahindra Bank,2023,India,3,25,38
+497,Kotak Mahindra Bank,2015,India,0,0,9
+498,Kotak Mahindra Bank,2017,India,0,10,18
+499,Kotak Mahindra Bank,2019,India,0,17,26
+500,Kotak Mahindra Bank,2021,India,1,23,37
+501,Kotak Mahindra Bank,2020,India,0,10,20
+502,Kotak Mahindra Bank,2018,India,1,9,22
+503,Kotak Mahindra Bank,2016,India,0,0,10
+504,HDFC Bank,2022,India,0,27,32
+505,HDFC Bank,2023,India,1,42,48
+506,HDFC Bank,2015,India,0,1,1
+507,HDFC Bank,2017,India,0,4,4
+508,HDFC Bank,2019,India,1,12,14
+509,HDFC Bank,2021,India,0,16,21
+510,HDFC Bank,2020,India,0,15,19
+511,HDFC Bank,2018,India,1,8,9
+512,HDFC Bank,2016,India,0,3,3
+513,Bajaj Auto,2022,India,0,2,4
+514,Bajaj Auto,2023,India,0,1,1
+515,Bajaj Auto,2015,India,0,1,2
+516,Bajaj Auto,2017,India,0,0,2
+517,Bajaj Auto,2019,India,0,1,1
+518,Bajaj Auto,2020,India,0,0,2
+519,Bajaj Auto,2018,India,0,0,2
+520,Bajaj Auto,2016,India,0,0,1
+521,HCL Technologies,2014,India,1,6,15
+522,HCL Technologies,2022,India,17,70,98
+523,HCL Technologies,2023,India,19,157,185
+524,HCL Technologies,2015,India,3,11,20
+525,HCL Technologies,2017,India,2,35,41
+526,HCL Technologies,2019,India,5,35,46
+527,HCL Technologies,2021,India,4,57,72
+528,HCL Technologies,2020,India,4,35,46
+529,HCL Technologies,2018,India,5,32,44
+530,HCL Technologies,2016,India,2,15,26
+531,Tata Consultancy Services,2014,India,1,7,12
+532,Tata Consultancy Services,2022,India,19,73,104
+533,Tata Consultancy Services,2023,India,21,96,125
+534,Tata Consultancy Services,2015,India,1,10,13
+535,Tata Consultancy Services,2017,India,9,18,35
+536,Tata Consultancy Services,2019,India,9,32,47
+537,Tata Consultancy Services,2021,India,10,44,67
+538,Tata Consultancy Services,2020,India,7,41,53
+539,Tata Consultancy Services,2018,India,9,29,44
+540,ICICI Bank,2014,India,0,0,1
+541,ICICI Bank,2022,India,0,4,6
+542,ICICI Bank,2023,India,2,15,19
+543,ICICI Bank,2017,India,1,7,9
+544,ICICI Bank,2019,India,0,8,8
+545,ICICI Bank,2021,India,1,3,6
+546,ICICI Bank,2020,India,0,5,7
+547,ICICI Bank,2018,India,1,10,11
+548,ICICI Bank,2016,India,0,2,3
+549,Oil&Natural Gas,2014,India,0,0,3
+550,Oil&Natural Gas,2022,India,0,2,14
+551,Oil&Natural Gas,2023,India,2,13,42
+552,Oil&Natural Gas,2017,India,0,0,6
+553,Oil&Natural Gas,2021,India,0,7,19
+554,Oil&Natural Gas,2018,India,0,2,9
+555,Oil&Natural Gas,2016,India,0,0,3
+556,Tata Motors,2014,India,0,0,9
+557,Tata Motors,2022,India,2,18,118
+558,Tata Motors,2023,India,1,6,12
+559,Tata Motors,2015,India,0,2,31
+560,Tata Motors,2017,India,0,0,1
+561,Tata Motors,2019,India,1,5,69
+562,Tata Motors,2021,India,1,14,83
+563,Tata Motors,2020,India,1,8,68
+564,Tata Motors,2018,India,0,0,9
+565,Tata Motors,2016,India,0,3,28
+566,State Bank of India,2022,India,1,13,15
+567,State Bank of India,2023,India,1,20,24
+568,State Bank of India,2019,India,0,5,5
+569,State Bank of India,2021,India,0,7,11
+570,State Bank of India,2020,India,2,15,19
+571,State Bank of India,2018,India,2,3,5
+572,Hindustan Unilever,2014,India,0,1,7
+573,Hindustan Unilever,2022,India,0,3,10
+574,Hindustan Unilever,2023,India,1,18,28
+575,Hindustan Unilever,2015,India,0,0,4
+576,Hindustan Unilever,2017,India,0,1,2
+577,Hindustan Unilever,2019,India,0,5,6
+578,Hindustan Unilever,2021,India,0,9,17
+579,Hindustan Unilever,2020,India,0,3,8
+580,Hindustan Unilever,2018,India,0,2,6
+581,Hindustan Unilever,2016,India,0,0,1
+582,Axis Bank,2022,India,0,14,21
+583,Axis Bank,2023,India,0,38,45
+584,Axis Bank,2015,India,0,0,1
+585,Axis Bank,2017,India,1,10,13
+586,Axis Bank,2021,India,2,20,25
+587,Axis Bank,2020,India,0,14,17
+588,Axis Bank,2018,India,0,10,11
+589,Larsen & Toubro,2014,India,1,4,10
+590,Larsen & Toubro,2022,India,3,42,56
+591,Larsen & Toubro,2023,India,5,48,62
+592,Larsen & Toubro,2015,India,0,2,9
+593,Larsen & Toubro,2017,India,2,10,17
+594,Larsen & Toubro,2019,India,0,44,56
+595,Larsen & Toubro,2021,India,4,30,44
+596,Larsen & Toubro,2020,India,2,42,55
+597,Larsen & Toubro,2018,India,1,26,41
+598,Larsen & Toubro,2016,India,3,4,14
+599,Maruti Suzuki India,2014,India,1,1,2
+600,Maruti Suzuki India,2022,India,4,5,12
+601,Maruti Suzuki India,2023,India,3,15,19
+602,Maruti Suzuki India,2015,India,0,0,3
+603,Maruti Suzuki India,2017,India,1,1,3
+604,Maruti Suzuki India,2019,India,0,6,9
+605,Maruti Suzuki India,2021,India,1,9,11
+606,Maruti Suzuki India,2020,India,1,6,12
+607,Maruti Suzuki India,2018,India,0,1,2
+608,Maruti Suzuki India,2016,India,0,0,5
+609,Bajaj Finance,2022,India,0,4,10
+610,Bajaj Finance,2023,India,0,9,14
+611,Bajaj Finance,2021,India,0,1,1
+612,Bajaj Finance,2020,India,0,7,8
+613,Bajaj Finance,2016,India,0,1,1
+614,Sun Pharmaceutical,2014,India,0,0,7
+615,Sun Pharmaceutical,2022,India,0,1,5
+616,Sun Pharmaceutical,2023,India,0,1,6
+617,Sun Pharmaceutical,2015,India,0,0,8
+618,Sun Pharmaceutical,2017,India,0,0,9
+619,Sun Pharmaceutical,2019,India,0,1,11
+620,Sun Pharmaceutical,2021,India,0,0,8
+621,Sun Pharmaceutical,2020,India,0,0,10
+622,Sun Pharmaceutical,2018,India,0,1,11
+623,Sun Pharmaceutical,2016,India,0,0,16
+624,Bharti Airtel,2014,India,0,1,3
+625,Bharti Airtel,2022,India,1,19,29
+626,Bharti Airtel,2023,India,1,18,32
+627,Bharti Airtel,2015,India,0,2,8
+628,Bharti Airtel,2017,India,0,12,13
+629,Bharti Airtel,2019,India,1,22,28
+630,Bharti Airtel,2021,India,0,21,29
+631,Bharti Airtel,2020,India,1,23,35
+632,Bharti Airtel,2018,India,1,12,15
+633,Bharti Airtel,2016,India,0,1,5
+634,NTPC Limited,2014,India,0,0,24
+635,NTPC Limited,2022,India,1,5,45
+636,NTPC Limited,2023,India,0,6,53
+637,NTPC Limited,2015,India,0,1,23
+638,NTPC Limited,2017,India,0,3,32
+639,NTPC Limited,2019,India,0,9,49
+640,NTPC Limited,2021,India,0,12,52
+641,NTPC Limited,2020,India,0,11,49
+642,NTPC Limited,2018,India,0,3,32
+643,NTPC Limited,2016,India,0,3,28
+644,Mahindra & Mahindra,2014,India,0,0,6
+645,Mahindra & Mahindra,2022,India,4,20,40
+646,Mahindra & Mahindra,2023,India,2,26,46
+647,Mahindra & Mahindra,2015,India,0,1,13
+648,Mahindra & Mahindra,2017,India,0,6,14
+649,Mahindra & Mahindra,2021,India,0,9,22
+650,Mahindra & Mahindra,2020,India,0,14,29
+651,Mahindra & Mahindra,2018,India,1,12,27
+652,Mahindra & Mahindra,2016,India,1,0,18
+653,Adani Enterprises,2022,India,1,7,11
+654,Adani Enterprises,2023,India,1,19,25
+655,Adani Enterprises,2015,India,0,0,46
+656,Adani Enterprises,2019,India,0,3,5
+657,Adani Enterprises,2021,India,0,2,4
+658,Adani Enterprises,2020,India,0,3,5
+659,ITC,2014,India,0,1,6
+660,ITC,2022,India,1,19,25
+661,ITC,2023,India,5,26,38
+662,ITC,2015,India,0,1,6
+663,ITC,2017,India,0,4,8
+664,ITC,2019,India,0,8,12
+665,ITC,2021,India,2,22,34
+666,ITC,2020,India,0,16,20
+667,ITC,2018,India,0,2,6
+668,ITC,2016,India,0,2,8
+669,Life Insurance Corporation of India,2022,India,1,6,16
+670,Life Insurance Corporation of India,2015,India,0,0,1
+671,Life Insurance Corporation of India,2017,India,0,0,84
+672,Life Insurance Corporation of India,2019,India,1,1,86
+673,Life Insurance Corporation of India,2021,India,3,5,25
+674,Life Insurance Corporation of India,2020,India,2,3,134
+675,Life Insurance Corporation of India,2018,India,0,0,92
+676,UltraTech Cement,2014,India,0,0,1
+677,UltraTech Cement,2022,India,0,13,20
+678,UltraTech Cement,2023,India,0,8,14
+679,UltraTech Cement,2017,India,0,0,2
+680,UltraTech Cement,2019,India,0,1,4
+681,UltraTech Cement,2021,India,0,8,12
+682,UltraTech Cement,2020,India,0,5,9
+683,UltraTech Cement,2018,India,0,1,6
+684,UltraTech Cement,2016,India,0,0,3
+685,Infosys,2014,India,0,5,8
+686,Infosys,2022,India,8,41,55
+687,Infosys,2023,India,16,71,93
+688,Infosys,2015,India,2,10,14
+689,Infosys,2017,India,4,19,30
+690,Infosys,2019,India,4,21,35
+691,Infosys,2021,India,5,30,44
+692,Infosys,2020,India,2,28,38
+693,Infosys,2018,India,2,22,31
+694,Infosys,2016,India,4,10,17

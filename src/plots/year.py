@@ -4,9 +4,9 @@ import pandas as pd
 import os
 
 
-df = pd.read_csv(os.path.join("src", "results", "results.csv"), index_col=0)
+df = pd.read_csv(os.path.join("src", "results", "results_unclassified.csv"), index_col=0)
 
-id_cols = ['Company','Year','Country','Revenue','Sector']
+id_cols = ['Company','Year','Country','Revenue','Sector', 'Unclassified']
 df_long = df.melt(id_vars=id_cols,
                   value_vars=[f'Goal_{i}' for i in range(1,18)],
                   var_name='GOAL',
@@ -64,6 +64,48 @@ def bar_over_years():
 
     fig2.show()
 
+def bar_over_years_normalized():
+    # 1. how many company-year records per Year
+    year_counts = (
+        df
+        .groupby('Year')
+        .size()
+        .reset_index(name='N_records')
+    )
+
+    # 2. total mentions of each GOAL per Year
+    bar_data = (
+        df_long
+        .groupby(['Year', 'GOAL'], as_index=False)['COUNT']
+        .sum()
+    )
+
+    # 3. merge and normalize by number of records that year
+    bar_data = bar_data.merge(year_counts, on='Year')
+    bar_data['avg_per_record'] = bar_data['COUNT'] / bar_data['N_records']
+
+    # 4. ensure GOAL is a string (for consistent legend ordering)
+    bar_data['GOAL'] = bar_data['GOAL'].astype(str)
+
+    # 5. plot
+    fig = px.bar(
+        bar_data,
+        x='Year',
+        y='avg_per_record',
+        color='GOAL',
+        barmode='stack',
+        title='Normalized SDG mentions per Record by Year',
+        labels={'avg_per_record': 'Average Mentions per Record'},
+        color_discrete_sequence=px.colors.qualitative.Vivid,
+    )
+    fig.update_layout(
+        xaxis=dict(dtick=1),  # one tick per year
+        yaxis_title='Average Mentions per Record'
+    )
+    fig.show()
+    return fig
+
+
 
 def plot_years():
     # count how many records you have for each year
@@ -82,8 +124,56 @@ def plot_years():
 
     fig.show()
 
+def bar_over_years_with_external_counts(freq_csv_path="src/results/initial_freq.csv"):
+    """
+    df_long: your long‐form dataframe with columns ['Year','GOAL','COUNT',…]
+    freq_csv_path: path to src/results/initial_freq.csv, which has one row per record
+    """
+    # 1. load external year‐freq CSV and compute counts per Year
+    freq = pd.read_csv(freq_csv_path)
+    year_counts = (
+        freq
+        .groupby('Year')
+        .size()
+        .reset_index(name='N_records')
+    )
+
+    # 2. sum total mentions of each GOAL per Year
+    bar_data = (
+        df_long
+        .groupby(['Year', 'GOAL'], as_index=False)['COUNT']
+        .sum()
+    )
+
+    # 3. merge on Year and normalize by the external counts
+    bar_data = bar_data.merge(year_counts, on='Year')
+    bar_data['avg_per_record'] = bar_data['COUNT'] / bar_data['N_records']
+
+    # 4. ensure GOAL is string for consistent legend ordering
+    bar_data['GOAL'] = bar_data['GOAL'].astype(str)
+
+    # 5. plot the normalized, stacked bar
+    fig = px.bar(
+        bar_data,
+        x='Year',
+        y='avg_per_record',
+        color='GOAL',
+        barmode='stack',
+        title='Normalized SDG Mentions per External Record Count by Year',
+        labels={'avg_per_record': 'Average Mentions per Record'},
+        color_discrete_sequence=px.colors.qualitative.Vivid,
+    )
+    fig.update_layout(
+        xaxis=dict(dtick=1),
+        yaxis_title='Average Mentions per Record'
+    )
+    fig.show()
+    return fig
+
 if __name__ == '__main__':
-    goal_over_years()
-    per_goal_over_years()
+    # goal_over_years()
+    # per_goal_over_years()
     bar_over_years()
-    plot_years()
+    # plot_years()
+    # bar_over_years_normalized()
+    bar_over_years_with_external_counts()

@@ -1,0 +1,815 @@
+,Company,Year,Country,Revenue,Sector
+0,Amazon,2014,USA,1761.0,Information Technology
+1,Amazon,2023,USA,1761.0,Information Technology
+2,Amazon,2015,USA,1761.0,Information Technology
+3,Amazon,2017,USA,1761.0,Information Technology
+4,Amazon,2019,USA,1761.0,Information Technology
+5,Amazon,2018,USA,1761.0,Information Technology
+6,Amazon,2016,USA,1761.0,Information Technology
+7,APPLE,2014,USA,3371.0,Information Technology
+8,APPLE,2022,USA,3371.0,Information Technology
+9,APPLE,2023,USA,3371.0,Information Technology
+10,APPLE,2015,USA,3371.0,Information Technology
+11,APPLE,2017,USA,3371.0,Information Technology
+12,APPLE,2019,USA,3371.0,Information Technology
+13,APPLE,2021,USA,3371.0,Information Technology
+14,APPLE,2020,USA,3371.0,Information Technology
+15,APPLE,2018,USA,3371.0,Information Technology
+16,APPLE,2016,USA,3371.0,Information Technology
+17,Exxon Mobil,2014,USA,500.44,Energy
+18,Exxon Mobil,2022,USA,500.44,Energy
+19,Exxon Mobil,2023,USA,500.44,Energy
+20,Exxon Mobil,2015,USA,500.44,Energy
+21,Exxon Mobil,2017,USA,500.44,Energy
+22,Exxon Mobil,2019,USA,500.44,Energy
+23,Exxon Mobil,2021,USA,500.44,Energy
+24,Exxon Mobil,2020,USA,500.44,Energy
+25,Exxon Mobil,2018,USA,500.44,Energy
+26,Exxon Mobil,2016,USA,500.44,Energy
+27,Meta Platforms (Facebook),2014,USA,1234.0,Information Technology
+28,Meta Platforms (Facebook),2022,USA,1234.0,Information Technology
+29,Meta Platforms (Facebook),2023,USA,1234.0,Information Technology
+30,Meta Platforms (Facebook),2015,USA,1234.0,Information Technology
+31,Meta Platforms (Facebook),2017,USA,1234.0,Information Technology
+32,Meta Platforms (Facebook),2019,USA,1234.0,Information Technology
+33,Meta Platforms (Facebook),2021,USA,1234.0,Information Technology
+34,Meta Platforms (Facebook),2020,USA,1234.0,Information Technology
+35,Meta Platforms (Facebook),2018,USA,1234.0,Information Technology
+36,Meta Platforms (Facebook),2016,USA,1234.0,Information Technology
+37,Berkshire Hathaway,2014,USA,922.79,Financials
+38,Berkshire Hathaway,2022,USA,922.79,Financials
+39,Berkshire Hathaway,2023,USA,922.79,Financials
+40,Berkshire Hathaway,2015,USA,922.79,Financials
+41,Berkshire Hathaway,2017,USA,922.79,Financials
+42,Berkshire Hathaway,2019,USA,922.79,Financials
+43,Berkshire Hathaway,2021,USA,922.79,Financials
+44,Berkshire Hathaway,2020,USA,922.79,Financials
+45,Berkshire Hathaway,2018,USA,922.79,Financials
+46,Berkshire Hathaway,2016,USA,922.79,Financials
+47,NVIDIA,2014,USA,2638.0,Information Technology
+48,NVIDIA,2022,USA,2638.0,Information Technology
+49,NVIDIA,2023,USA,2638.0,Information Technology
+50,NVIDIA,2015,USA,2638.0,Information Technology
+51,NVIDIA,2017,USA,2638.0,Information Technology
+52,NVIDIA,2019,USA,2638.0,Information Technology
+53,NVIDIA,2021,USA,2638.0,Information Technology
+54,NVIDIA,2020,USA,2638.0,Information Technology
+55,NVIDIA,2018,USA,2638.0,Information Technology
+56,NVIDIA,2016,USA,2638.0,Information Technology
+57,Walmart,2014,USA,616.05,Consumer Staples
+58,Walmart,2022,USA,616.05,Consumer Staples
+59,Walmart,2023,USA,616.05,Consumer Staples
+60,Walmart,2015,USA,616.05,Consumer Staples
+61,Walmart,2017,USA,616.05,Consumer Staples
+62,Walmart,2019,USA,616.05,Consumer Staples
+63,Walmart,2021,USA,616.05,Consumer Staples
+64,Walmart,2020,USA,616.05,Consumer Staples
+65,Walmart,2018,USA,616.05,Consumer Staples
+66,Walmart,2016,USA,616.05,Consumer Staples
+67,Johnson&Johnson,2014,USA,395.7,Health Care
+68,Johnson&Johnson,2022,USA,395.7,Health Care
+69,Johnson&Johnson,2023,USA,395.7,Health Care
+70,Johnson&Johnson,2015,USA,395.7,Health Care
+71,Johnson&Johnson,2017,USA,395.7,Health Care
+72,Johnson&Johnson,2019,USA,395.7,Health Care
+73,Johnson&Johnson,2021,USA,395.7,Health Care
+74,Johnson&Johnson,2020,USA,395.7,Health Care
+75,Johnson&Johnson,2018,USA,395.7,Health Care
+76,Johnson&Johnson,2016,USA,395.7,Health Care
+77,Procter&Gamble,2014,USA,412.58,Consumer Staples
+78,Procter&Gamble,2022,USA,412.58,Consumer Staples
+79,Procter&Gamble,2023,USA,412.58,Consumer Staples
+80,Procter&Gamble,2015,USA,412.58,Consumer Staples
+81,Procter&Gamble,2017,USA,412.58,Consumer Staples
+82,Procter&Gamble,2019,USA,412.58,Consumer Staples
+83,Procter&Gamble,2021,USA,412.58,Consumer Staples
+84,Procter&Gamble,2020,USA,412.58,Consumer Staples
+85,Procter&Gamble,2018,USA,412.58,Consumer Staples
+86,Procter&Gamble,2016,USA,412.58,Consumer Staples
+87,United Health,2014,USA,551.16,Health Care
+88,United Health,2022,USA,551.16,Health Care
+89,United Health,2023,USA,551.16,Health Care
+90,United Health,2015,USA,551.16,Health Care
+91,United Health,2017,USA,551.16,Health Care
+92,United Health,2019,USA,551.16,Health Care
+93,United Health,2021,USA,551.16,Health Care
+94,United Health,2020,USA,551.16,Health Care
+95,United Health,2018,USA,551.16,Health Care
+96,United Health,2016,USA,551.16,Health Care
+97,Morgan&Chase,2014,USA,604.48,Financials
+98,Morgan&Chase,2022,USA,604.48,Financials
+99,Morgan&Chase,2023,USA,604.48,Financials
+100,Morgan&Chase,2015,USA,604.48,Financials
+101,Morgan&Chase,2017,USA,604.48,Financials
+102,Morgan&Chase,2019,USA,604.48,Financials
+103,Morgan&Chase,2021,USA,604.48,Financials
+104,Morgan&Chase,2020,USA,604.48,Financials
+105,Morgan&Chase,2018,USA,604.48,Financials
+106,Morgan&Chase,2016,USA,604.48,Financials
+107,Mastercard,2014,USA,439.85,Financials
+108,Mastercard,2022,USA,439.85,Financials
+109,Mastercard,2023,USA,439.85,Financials
+110,Mastercard,2015,USA,439.85,Financials
+111,Mastercard,2017,USA,439.85,Financials
+112,Mastercard,2019,USA,439.85,Financials
+113,Mastercard,2021,USA,439.85,Financials
+114,Mastercard,2020,USA,439.85,Financials
+115,Mastercard,2018,USA,439.85,Financials
+116,Mastercard,2016,USA,439.85,Financials
+117,Eli Lilly,2014,USA,724.33,Health Care
+118,Eli Lilly,2022,USA,724.33,Health Care
+119,Eli Lilly,2023,USA,724.33,Health Care
+120,Eli Lilly,2015,USA,724.33,Health Care
+121,Eli Lilly,2017,USA,724.33,Health Care
+122,Eli Lilly,2019,USA,724.33,Health Care
+123,Eli Lilly,2021,USA,724.33,Health Care
+124,Eli Lilly,2020,USA,724.33,Health Care
+125,Eli Lilly,2018,USA,724.33,Health Care
+126,Eli Lilly,2016,USA,724.33,Health Care
+127,Oracle,2014,USA,390.8,Information Technology
+128,Oracle,2022,USA,390.8,Information Technology
+129,Oracle,2023,USA,390.8,Information Technology
+130,Oracle,2015,USA,390.8,Information Technology
+131,Oracle,2017,USA,390.8,Information Technology
+132,Oracle,2019,USA,390.8,Information Technology
+133,Oracle,2021,USA,390.8,Information Technology
+134,Oracle,2020,USA,390.8,Information Technology
+135,Oracle,2018,USA,390.8,Information Technology
+136,Oracle,2016,USA,390.8,Information Technology
+137,Microsoft,2014,USA,3036.0,Information Technology
+138,Microsoft,2022,USA,3036.0,Information Technology
+139,Microsoft,2023,USA,3036.0,Information Technology
+140,Microsoft,2015,USA,3036.0,Information Technology
+141,Microsoft,2017,USA,3036.0,Information Technology
+142,Microsoft,2019,USA,3036.0,Information Technology
+143,Microsoft,2021,USA,3036.0,Information Technology
+144,Microsoft,2020,USA,3036.0,Information Technology
+145,Microsoft,2018,USA,3036.0,Information Technology
+146,Microsoft,2016,USA,3036.0,Information Technology
+147,Costco,2014,USA,388.66,Consumer Staples
+148,Costco,2022,USA,388.66,Consumer Staples
+149,Costco,2023,USA,388.66,Consumer Staples
+150,Costco,2015,USA,388.66,Consumer Staples
+151,Costco,2017,USA,388.66,Consumer Staples
+152,Costco,2019,USA,388.66,Consumer Staples
+153,Costco,2021,USA,388.66,Consumer Staples
+154,Costco,2020,USA,388.66,Consumer Staples
+155,Costco,2018,USA,388.66,Consumer Staples
+156,Costco,2016,USA,388.66,Consumer Staples
+157,Visa,2014,USA,543.62,Financials
+158,Visa,2022,USA,543.62,Financials
+159,Visa,2023,USA,543.62,Financials
+160,Visa,2015,USA,543.62,Financials
+161,Visa,2017,USA,543.62,Financials
+162,Visa,2019,USA,543.62,Financials
+163,Visa,2021,USA,543.62,Financials
+164,Visa,2020,USA,543.62,Financials
+165,Visa,2018,USA,543.62,Financials
+166,Visa,2016,USA,543.62,Financials
+167,Broadcom,2014,USA,669.46,Information Technology
+168,Broadcom,2022,USA,669.46,Information Technology
+169,Broadcom,2023,USA,669.46,Information Technology
+170,Broadcom,2015,USA,669.46,Information Technology
+171,Broadcom,2017,USA,669.46,Information Technology
+172,Broadcom,2019,USA,669.46,Information Technology
+173,Broadcom,2021,USA,669.46,Information Technology
+174,Broadcom,2020,USA,669.46,Information Technology
+175,Broadcom,2018,USA,669.46,Information Technology
+176,Broadcom,2016,USA,669.46,Information Technology
+177,Alphabet(Google),2014,USA,2062.0,Information Technology
+178,Alphabet(Google),2022,USA,2062.0,Information Technology
+179,Alphabet(Google),2023,USA,2062.0,Information Technology
+180,Alphabet(Google),2015,USA,2062.0,Information Technology
+181,Alphabet(Google),2017,USA,2062.0,Information Technology
+182,Alphabet(Google),2019,USA,2062.0,Information Technology
+183,Alphabet(Google),2021,USA,2062.0,Information Technology
+184,Alphabet(Google),2020,USA,2062.0,Information Technology
+185,Alphabet(Google),2018,USA,2062.0,Information Technology
+186,Alphabet(Google),2016,USA,2062.0,Information Technology
+187,Tesla,2014,USA,663.43,Industries
+188,Tesla,2022,USA,663.43,Industries
+189,Tesla,2023,USA,663.43,Industries
+190,Tesla,2015,USA,663.43,Industries
+191,Tesla,2017,USA,663.43,Industries
+192,Tesla,2019,USA,663.43,Industries
+193,Tesla,2021,USA,663.43,Industries
+194,Tesla,2020,USA,663.43,Industries
+195,Tesla,2018,USA,663.43,Industries
+196,Tesla,2016,USA,663.43,Industries
+197,Adidas,2014,Germany,244.57,Consumer Discretionary
+198,Adidas,2022,Germany,244.57,Consumer Discretionary
+199,Adidas,2023,Germany,244.57,Consumer Discretionary
+200,Adidas,2015,Germany,244.57,Consumer Discretionary
+201,Adidas,2017,Germany,244.57,Consumer Discretionary
+202,Adidas,2019,Germany,244.57,Consumer Discretionary
+203,Adidas,2021,Germany,244.57,Consumer Discretionary
+204,Adidas,2020,Germany,244.57,Consumer Discretionary
+205,Adidas,2018,Germany,244.57,Consumer Discretionary
+206,Adidas,2016,Germany,244.57,Consumer Discretionary
+207,Siemens Healthineers,2014,Germany,58.91,Health Care
+208,Siemens Healthineers,2022,Germany,58.91,Health Care
+209,Siemens Healthineers,2023,Germany,58.91,Health Care
+210,Siemens Healthineers,2017,Germany,58.91,Health Care
+211,Siemens Healthineers,2019,Germany,58.91,Health Care
+212,Siemens Healthineers,2021,Germany,58.91,Health Care
+213,Siemens Healthineers,2020,Germany,58.91,Health Care
+214,Siemens Healthineers,2018,Germany,58.91,Health Care
+215,BMW,2014,Germany,55.03,Industries
+216,BMW,2022,Germany,55.03,Industries
+217,BMW,2023,Germany,55.03,Industries
+218,BMW,2015,Germany,55.03,Industries
+219,BMW,2017,Germany,55.03,Industries
+220,BMW,2019,Germany,55.03,Industries
+221,BMW,2021,Germany,55.03,Industries
+222,BMW,2020,Germany,55.03,Industries
+223,BMW,2018,Germany,55.03,Industries
+224,BMW,2016,Germany,55.03,Industries
+225,BASF,2014,Germany,42.93,Industries
+226,BASF,2022,Germany,42.93,Industries
+227,BASF,2023,Germany,42.93,Industries
+228,BASF,2015,Germany,42.93,Industries
+229,BASF,2017,Germany,42.93,Industries
+230,BASF,2019,Germany,42.93,Industries
+231,BASF,2021,Germany,42.93,Industries
+232,BASF,2020,Germany,42.93,Industries
+233,BASF,2018,Germany,42.93,Industries
+234,BASF,2016,Germany,42.93,Industries
+235,Infineon,2014,Germany,41.66,Industries
+236,Infineon,2022,Germany,41.66,Industries
+237,Infineon,2023,Germany,41.66,Industries
+238,Infineon,2015,Germany,41.66,Industries
+239,Infineon,2017,Germany,41.66,Industries
+240,Infineon,2019,Germany,41.66,Industries
+241,Infineon,2021,Germany,41.66,Industries
+242,Infineon,2020,Germany,41.66,Industries
+243,Infineon,2018,Germany,41.66,Industries
+244,Infineon,2016,Germany,41.66,Industries
+245,DHL Group,2014,Germany,49.82,Industries
+246,DHL Group,2022,Germany,49.82,Industries
+247,DHL Group,2023,Germany,49.82,Industries
+248,DHL Group,2015,Germany,49.82,Industries
+249,DHL Group,2017,Germany,49.82,Industries
+250,DHL Group,2019,Germany,49.82,Industries
+251,DHL Group,2021,Germany,49.82,Industries
+252,DHL Group,2020,Germany,49.82,Industries
+253,DHL Group,2018,Germany,49.82,Industries
+254,DHL Group,2016,Germany,49.82,Industries
+255,Mercedes-Benz,2014,Germany,68.14,Consumer Discretionary
+256,Mercedes-Benz,2022,Germany,68.14,Consumer Discretionary
+257,Mercedes-Benz,2023,Germany,68.14,Consumer Discretionary
+258,Mercedes-Benz,2015,Germany,68.14,Consumer Discretionary
+259,Mercedes-Benz,2017,Germany,68.14,Consumer Discretionary
+260,Mercedes-Benz,2019,Germany,68.14,Consumer Discretionary
+261,Mercedes-Benz,2021,Germany,68.14,Consumer Discretionary
+262,Mercedes-Benz,2020,Germany,68.14,Consumer Discretionary
+263,Mercedes-Benz,2018,Germany,68.14,Consumer Discretionary
+264,Mercedes-Benz,2016,Germany,68.14,Consumer Discretionary
+265,SAP,2014,Germany,240.94,Information Technology
+266,SAP,2022,Germany,240.94,Information Technology
+267,SAP,2023,Germany,240.94,Information Technology
+268,SAP,2015,Germany,240.94,Information Technology
+269,SAP,2017,Germany,240.94,Information Technology
+270,SAP,2019,Germany,240.94,Information Technology
+271,SAP,2021,Germany,240.94,Information Technology
+272,SAP,2020,Germany,240.94,Information Technology
+273,SAP,2018,Germany,240.94,Information Technology
+274,SAP,2016,Germany,240.94,Information Technology
+275,Hannover Rück,2014,Germany,33.67,Financials
+276,Hannover Rück,2022,Germany,33.67,Financials
+277,Hannover Rück,2023,Germany,33.67,Financials
+278,Hannover Rück,2015,Germany,33.67,Financials
+279,Hannover Rück,2017,Germany,33.67,Financials
+280,Hannover Rück,2019,Germany,33.67,Financials
+281,Hannover Rück,2021,Germany,33.67,Financials
+282,Hannover Rück,2020,Germany,33.67,Financials
+283,Hannover Rück,2018,Germany,33.67,Financials
+284,Hannover Rück,2016,Germany,33.67,Financials
+285,Siemens,2014,Germany,135.42,Industries
+286,Siemens,2022,Germany,135.42,Industries
+287,Siemens,2023,Germany,135.42,Industries
+288,Siemens,2015,Germany,135.42,Industries
+289,Siemens,2017,Germany,135.42,Industries
+290,Siemens,2019,Germany,135.42,Industries
+291,Siemens,2021,Germany,135.42,Industries
+292,Siemens,2020,Germany,135.42,Industries
+293,Siemens,2018,Germany,135.42,Industries
+294,Siemens,2016,Germany,135.42,Industries
+295,Deutsche Börse,2014,Germany,41.91,Financials
+296,Deutsche Börse,2022,Germany,41.91,Financials
+297,Deutsche Börse,2023,Germany,41.91,Financials
+298,Deutsche Börse,2015,Germany,41.91,Financials
+299,Deutsche Börse,2017,Germany,41.91,Financials
+300,Deutsche Börse,2019,Germany,41.91,Financials
+301,Deutsche Börse,2021,Germany,41.91,Financials
+302,Deutsche Börse,2020,Germany,41.91,Financials
+303,Deutsche Börse,2018,Germany,41.91,Financials
+304,Deutsche Börse,2016,Germany,41.91,Financials
+305,Porsche,2014,Germany,67.4,Consumer Discretionary
+306,Porsche,2022,Germany,67.4,Consumer Discretionary
+307,Porsche,2023,Germany,67.4,Consumer Discretionary
+308,Porsche,2015,Germany,67.4,Consumer Discretionary
+309,Porsche,2017,Germany,67.4,Consumer Discretionary
+310,Porsche,2019,Germany,67.4,Consumer Discretionary
+311,Porsche,2021,Germany,67.4,Consumer Discretionary
+312,Porsche,2020,Germany,67.4,Consumer Discretionary
+313,Porsche,2018,Germany,67.4,Consumer Discretionary
+314,Porsche,2016,Germany,67.4,Consumer Discretionary
+315,Merck,2014,Germany,78.9,Health Care
+316,Merck,2022,Germany,78.9,Health Care
+317,Merck,2023,Germany,78.9,Health Care
+318,Merck,2015,Germany,78.9,Health Care
+319,Merck,2017,Germany,78.9,Health Care
+320,Merck,2019,Germany,78.9,Health Care
+321,Merck,2021,Germany,78.9,Health Care
+322,Merck,2020,Germany,78.9,Health Care
+323,Merck,2018,Germany,78.9,Health Care
+324,Merck,2016,Germany,78.9,Health Care
+325,Munich RE,2014,Germany,63.39,Financials
+326,Munich RE,2022,Germany,63.39,Financials
+327,Munich RE,2023,Germany,63.39,Financials
+328,Munich RE,2015,Germany,63.39,Financials
+329,Munich RE,2017,Germany,63.39,Financials
+330,Munich RE,2019,Germany,63.39,Financials
+331,Munich RE,2021,Germany,63.39,Financials
+332,Munich RE,2020,Germany,63.39,Financials
+333,Munich RE,2018,Germany,63.39,Financials
+334,Munich RE,2016,Germany,63.39,Financials
+335,Beiersdorf,2014,Germany,32.13,Consumer Staples
+336,Beiersdorf,2022,Germany,32.13,Consumer Staples
+337,Beiersdorf,2023,Germany,32.13,Consumer Staples
+338,Beiersdorf,2015,Germany,32.13,Consumer Staples
+339,Beiersdorf,2017,Germany,32.13,Consumer Staples
+340,Beiersdorf,2019,Germany,32.13,Consumer Staples
+341,Beiersdorf,2021,Germany,32.13,Consumer Staples
+342,Beiersdorf,2020,Germany,32.13,Consumer Staples
+343,Beiersdorf,2018,Germany,32.13,Consumer Staples
+344,Beiersdorf,2016,Germany,32.13,Consumer Staples
+345,Allianz,2014,Germany,106.68,Financials
+346,Allianz,2022,Germany,106.68,Financials
+347,Allianz,2023,Germany,106.68,Financials
+348,Allianz,2015,Germany,106.68,Financials
+349,Allianz,2017,Germany,106.68,Financials
+350,Allianz,2019,Germany,106.68,Financials
+351,Allianz,2021,Germany,106.68,Financials
+352,Allianz,2020,Germany,106.68,Financials
+353,Allianz,2018,Germany,106.68,Financials
+354,Allianz,2016,Germany,106.68,Financials
+355,Deutsche Telekom,2014,Germany,130.56,Communication Services
+356,Deutsche Telekom,2022,Germany,130.56,Communication Services
+357,Deutsche Telekom,2023,Germany,130.56,Communication Services
+358,Deutsche Telekom,2015,Germany,130.56,Communication Services
+359,Deutsche Telekom,2017,Germany,130.56,Communication Services
+360,Deutsche Telekom,2019,Germany,130.56,Communication Services
+361,Deutsche Telekom,2021,Germany,130.56,Communication Services
+362,Deutsche Telekom,2020,Germany,130.56,Communication Services
+363,Deutsche Telekom,2016,Germany,130.56,Communication Services
+364,Henkel,2014,Germany,35.64,Consumer Staples
+365,Henkel,2022,Germany,35.64,Consumer Staples
+366,Henkel,2023,Germany,35.64,Consumer Staples
+367,Henkel,2015,Germany,35.64,Consumer Staples
+368,Henkel,2017,Germany,35.64,Consumer Staples
+369,Henkel,2019,Germany,35.64,Consumer Staples
+370,Henkel,2021,Germany,35.64,Consumer Staples
+371,Henkel,2020,Germany,35.64,Consumer Staples
+372,Henkel,2018,Germany,35.64,Consumer Staples
+373,Henkel,2016,Germany,35.64,Consumer Staples
+374,EON,2014,Germany,38.46,Energy
+375,EON,2022,Germany,38.46,Energy
+376,EON,2023,Germany,38.46,Energy
+377,EON,2015,Germany,38.46,Energy
+378,EON,2017,Germany,38.46,Energy
+379,EON,2019,Germany,38.46,Energy
+380,EON,2021,Germany,38.46,Energy
+381,EON,2020,Germany,38.46,Energy
+382,EON,2018,Germany,38.46,Energy
+383,EON,2016,Germany,38.46,Energy
+384,Volkswagen,2014,Germany,52.66,Consumer Discretionary
+385,Volkswagen,2022,Germany,52.66,Consumer Discretionary
+386,Volkswagen,2023,Germany,52.66,Consumer Discretionary
+387,Volkswagen,2015,Germany,52.66,Consumer Discretionary
+388,Volkswagen,2017,Germany,52.66,Consumer Discretionary
+389,Volkswagen,2019,Germany,52.66,Consumer Discretionary
+390,Volkswagen,2021,Germany,52.66,Consumer Discretionary
+391,Volkswagen,2020,Germany,52.66,Consumer Discretionary
+392,Volkswagen,2018,Germany,52.66,Consumer Discretionary
+393,Volkswagen,2016,Germany,52.66,Consumer Discretionary
+394,China Iife Insurance,2014,China,111.24,Financials
+395,China Iife Insurance,2022,China,111.24,Financials
+396,China Iife Insurance,2023,China,111.24,Financials
+397,China Iife Insurance,2015,China,111.24,Financials
+398,China Iife Insurance,2017,China,111.24,Financials
+399,China Iife Insurance,2019,China,111.24,Financials
+400,China Iife Insurance,2021,China,111.24,Financials
+401,China Iife Insurance,2020,China,111.24,Financials
+402,China Iife Insurance,2018,China,111.24,Financials
+403,China Iife Insurance,2016,China,111.24,Financials
+404,Tencent,2014,China,428.32,Information Technology
+405,Tencent,2022,China,428.32,Information Technology
+406,Tencent,2023,China,428.32,Information Technology
+407,Tencent,2015,China,428.32,Information Technology
+408,Tencent,2017,China,428.32,Information Technology
+409,Tencent,2019,China,428.32,Information Technology
+410,Tencent,2021,China,428.32,Information Technology
+411,Tencent,2020,China,428.32,Information Technology
+412,Tencent,2018,China,428.32,Information Technology
+413,Tencent,2016,China,428.32,Information Technology
+414,Kweichow Moutai,2014,China,243.08,Consumer Staples
+415,Kweichow Moutai,2022,China,243.08,Consumer Staples
+416,Kweichow Moutai,2023,China,243.08,Consumer Staples
+417,Kweichow Moutai,2015,China,243.08,Consumer Staples
+418,Kweichow Moutai,2017,China,243.08,Consumer Staples
+419,Kweichow Moutai,2019,China,243.08,Consumer Staples
+420,Kweichow Moutai,2021,China,243.08,Consumer Staples
+421,Kweichow Moutai,2020,China,243.08,Consumer Staples
+422,Kweichow Moutai,2018,China,243.08,Consumer Staples
+423,Kweichow Moutai,2016,China,243.08,Consumer Staples
+424,Agricultural Bank of China,2014,China,221.35,Financials
+425,Agricultural Bank of China,2022,China,221.35,Financials
+426,Agricultural Bank of China,2023,China,221.35,Financials
+427,Agricultural Bank of China,2015,China,221.35,Financials
+428,Agricultural Bank of China,2017,China,221.35,Financials
+429,Agricultural Bank of China,2019,China,221.35,Financials
+430,Agricultural Bank of China,2021,China,221.35,Financials
+431,Agricultural Bank of China,2020,China,221.35,Financials
+432,Agricultural Bank of China,2018,China,221.35,Financials
+433,Agricultural Bank of China,2016,China,221.35,Financials
+434,Sinopec,2014,China,104.55,Energy
+435,Sinopec,2022,China,104.55,Energy
+436,Sinopec,2023,China,104.55,Energy
+437,Sinopec,2015,China,104.55,Energy
+438,Sinopec,2017,China,104.55,Energy
+439,Sinopec,2019,China,104.55,Energy
+440,Sinopec,2021,China,104.55,Energy
+441,Sinopec,2020,China,104.55,Energy
+442,Sinopec,2018,China,104.55,Energy
+443,Sinopec,2016,China,104.55,Energy
+444,PetroChina,2014,China,218.98,Energy
+445,PetroChina,2022,China,218.98,Energy
+446,PetroChina,2023,China,218.98,Energy
+447,PetroChina,2015,China,218.98,Energy
+448,PetroChina,2017,China,218.98,Energy
+449,PetroChina,2019,China,218.98,Energy
+450,PetroChina,2021,China,218.98,Energy
+451,PetroChina,2020,China,218.98,Energy
+452,PetroChina,2018,China,218.98,Energy
+453,PetroChina,2016,China,218.98,Energy
+454,Meituan,2022,China,93.17,Information Technology
+455,Meituan,2023,China,93.17,Information Technology
+456,Meituan,2019,China,93.17,Information Technology
+457,Meituan,2021,China,93.17,Information Technology
+458,Meituan,2020,China,93.17,Information Technology
+459,Meituan,2018,China,93.17,Information Technology
+460,China Mobile,2014,China,206.74,Communication Services
+461,China Mobile,2022,China,206.74,Communication Services
+462,China Mobile,2023,China,206.74,Communication Services
+463,China Mobile,2015,China,206.74,Communication Services
+464,China Mobile,2017,China,206.74,Communication Services
+465,China Mobile,2019,China,206.74,Communication Services
+466,China Mobile,2021,China,206.74,Communication Services
+467,China Mobile,2020,China,206.74,Communication Services
+468,China Mobile,2018,China,206.74,Communication Services
+469,China Mobile,2016,China,206.74,Communication Services
+470,CATL,2022,China,115.41,Industries
+471,CATL,2023,China,115.41,Industries
+472,CATL,2019,China,115.41,Industries
+473,CATL,2021,China,115.41,Industries
+474,CATL,2020,China,115.41,Industries
+475,CATL,2018,China,115.41,Industries
+476,Alibaba,2022,China,187.26,Information Technology
+477,Alibaba,2023,China,187.26,Information Technology
+478,Alibaba,2015,China,187.26,Information Technology
+479,Alibaba,2017,China,187.26,Information Technology
+480,Alibaba,2019,China,187.26,Information Technology
+481,Alibaba,2021,China,187.26,Information Technology
+482,Alibaba,2020,China,187.26,Information Technology
+483,Alibaba,2018,China,187.26,Information Technology
+484,Alibaba,2016,China,187.26,Information Technology
+485,CNOOC,2014,China,124.7,Energy
+486,CNOOC,2022,China,124.7,Energy
+487,CNOOC,2023,China,124.7,Energy
+488,CNOOC,2015,China,124.7,Energy
+489,CNOOC,2017,China,124.7,Energy
+490,CNOOC,2019,China,124.7,Energy
+491,CNOOC,2021,China,124.7,Energy
+492,CNOOC,2020,China,124.7,Energy
+493,CNOOC,2018,China,124.7,Energy
+494,CNOOC,2016,China,124.7,Energy
+495,ICBC,2014,China,267.08,Financials
+496,ICBC,2022,China,267.08,Financials
+497,ICBC,2023,China,267.08,Financials
+498,ICBC,2015,China,267.08,Financials
+499,ICBC,2017,China,267.08,Financials
+500,ICBC,2019,China,267.08,Financials
+501,ICBC,2021,China,267.08,Financials
+502,ICBC,2020,China,267.08,Financials
+503,ICBC,2018,China,267.08,Financials
+504,ICBC,2016,China,267.08,Financials
+505,China Yangtze Power,2022,China,100.53,Energy
+506,China Yangtze Power,2023,China,100.53,Energy
+507,China Yangtze Power,2021,China,100.53,Energy
+508,China Yangtze Power,2020,China,100.53,Energy
+509,PingAn Insurance,2014,China,100.07,Financials
+510,PingAn Insurance,2022,China,100.07,Financials
+511,PingAn Insurance,2023,China,100.07,Financials
+512,PingAn Insurance,2015,China,100.07,Financials
+513,PingAn Insurance,2017,China,100.07,Financials
+514,PingAn Insurance,2019,China,100.07,Financials
+515,PingAn Insurance,2021,China,100.07,Financials
+516,PingAn Insurance,2020,China,100.07,Financials
+517,PingAn Insurance,2018,China,100.07,Financials
+518,PingAn Insurance,2016,China,100.07,Financials
+519,CM Bank,2014,China,108.68,Financials
+520,CM Bank,2022,China,108.68,Financials
+521,CM Bank,2023,China,108.68,Financials
+522,CM Bank,2015,China,108.68,Financials
+523,CM Bank,2017,China,108.68,Financials
+524,CM Bank,2019,China,108.68,Financials
+525,CM Bank,2021,China,108.68,Financials
+526,CM Bank,2020,China,108.68,Financials
+527,CM Bank,2018,China,108.68,Financials
+528,CM Bank,2016,China,108.68,Financials
+529,China Construction Bank,2014,China,178.16,Financials
+530,China Construction Bank,2022,China,178.16,Financials
+531,China Construction Bank,2023,China,178.16,Financials
+532,China Construction Bank,2015,China,178.16,Financials
+533,China Construction Bank,2017,China,178.16,Financials
+534,China Construction Bank,2019,China,178.16,Financials
+535,China Construction Bank,2021,China,178.16,Financials
+536,China Construction Bank,2020,China,178.16,Financials
+537,China Construction Bank,2018,China,178.16,Financials
+538,China Construction Bank,2016,China,178.16,Financials
+539,China Shenhua Energy,2014,China,103.81,Energy
+540,China Shenhua Energy,2022,China,103.81,Energy
+541,China Shenhua Energy,2023,China,103.81,Energy
+542,China Shenhua Energy,2015,China,103.81,Energy
+543,China Shenhua Energy,2017,China,103.81,Energy
+544,China Shenhua Energy,2019,China,103.81,Energy
+545,China Shenhua Energy,2021,China,103.81,Energy
+546,China Shenhua Energy,2020,China,103.81,Energy
+547,China Shenhua Energy,2018,China,103.81,Energy
+548,China Shenhua Energy,2016,China,103.81,Energy
+549,Pinduoduo,2022,China,176.94,Information Technology
+550,Pinduoduo,2023,China,176.94,Information Technology
+551,Pinduoduo,2019,China,176.94,Information Technology
+552,Pinduoduo,2021,China,176.94,Information Technology
+553,Pinduoduo,2020,China,176.94,Information Technology
+554,Pinduoduo,2018,China,176.94,Information Technology
+555,Bank of China,2014,China,175.5,Financials
+556,Bank of China,2022,China,175.5,Financials
+557,Bank of China,2023,China,175.5,Financials
+558,Bank of China,2015,China,175.5,Financials
+559,Bank of China,2017,China,175.5,Financials
+560,Bank of China,2019,China,175.5,Financials
+561,Bank of China,2021,China,175.5,Financials
+562,Bank of China,2020,China,175.5,Financials
+563,Bank of China,2018,China,175.5,Financials
+564,Bank of China,2016,China,175.5,Financials
+565,BYD,2014,China,98.15,Industries
+566,BYD,2022,China,98.15,Industries
+567,BYD,2023,China,98.15,Industries
+568,BYD,2015,China,98.15,Industries
+569,BYD,2017,China,98.15,Industries
+570,BYD,2019,China,98.15,Industries
+571,BYD,2021,China,98.15,Industries
+572,BYD,2020,China,98.15,Industries
+573,BYD,2018,China,98.15,Industries
+574,BYD,2016,China,98.15,Industries
+575,Reliance Industries,2014,India,244.77,Energy
+576,Reliance Industries,2022,India,244.77,Energy
+577,Reliance Industries,2023,India,244.77,Energy
+578,Reliance Industries,2015,India,244.77,Energy
+579,Reliance Industries,2017,India,244.77,Energy
+580,Reliance Industries,2019,India,244.77,Energy
+581,Reliance Industries,2021,India,244.77,Energy
+582,Reliance Industries,2020,India,244.77,Energy
+583,Reliance Industries,2018,India,244.77,Energy
+584,Reliance Industries,2016,India,244.77,Energy
+585,Kotak Mahindra Bank,2014,India,41.8,Financials
+586,Kotak Mahindra Bank,2022,India,41.8,Financials
+587,Kotak Mahindra Bank,2023,India,41.8,Financials
+588,Kotak Mahindra Bank,2015,India,41.8,Financials
+589,Kotak Mahindra Bank,2017,India,41.8,Financials
+590,Kotak Mahindra Bank,2019,India,41.8,Financials
+591,Kotak Mahindra Bank,2021,India,41.8,Financials
+592,Kotak Mahindra Bank,2020,India,41.8,Financials
+593,Kotak Mahindra Bank,2018,India,41.8,Financials
+594,Kotak Mahindra Bank,2016,India,41.8,Financials
+595,HDFC Bank,2014,India,152.34,Financials
+596,HDFC Bank,2022,India,152.34,Financials
+597,HDFC Bank,2023,India,152.34,Financials
+598,HDFC Bank,2015,India,152.34,Financials
+599,HDFC Bank,2017,India,152.34,Financials
+600,HDFC Bank,2019,India,152.34,Financials
+601,HDFC Bank,2021,India,152.34,Financials
+602,HDFC Bank,2020,India,152.34,Financials
+603,HDFC Bank,2018,India,152.34,Financials
+604,HDFC Bank,2016,India,152.34,Financials
+605,Bajaj Auto,2014,India,39.46,Consumer Discretionary
+606,Bajaj Auto,2022,India,39.46,Consumer Discretionary
+607,Bajaj Auto,2023,India,39.46,Consumer Discretionary
+608,Bajaj Auto,2015,India,39.46,Consumer Discretionary
+609,Bajaj Auto,2017,India,39.46,Consumer Discretionary
+610,Bajaj Auto,2019,India,39.46,Consumer Discretionary
+611,Bajaj Auto,2021,India,39.46,Consumer Discretionary
+612,Bajaj Auto,2020,India,39.46,Consumer Discretionary
+613,Bajaj Auto,2018,India,39.46,Consumer Discretionary
+614,Bajaj Auto,2016,India,39.46,Consumer Discretionary
+615,HCL Technologies,2014,India,56.64,Information Technology
+616,HCL Technologies,2022,India,56.64,Information Technology
+617,HCL Technologies,2023,India,56.64,Information Technology
+618,HCL Technologies,2015,India,56.64,Information Technology
+619,HCL Technologies,2017,India,56.64,Information Technology
+620,HCL Technologies,2019,India,56.64,Information Technology
+621,HCL Technologies,2021,India,56.64,Information Technology
+622,HCL Technologies,2020,India,56.64,Information Technology
+623,HCL Technologies,2018,India,56.64,Information Technology
+624,HCL Technologies,2016,India,56.64,Information Technology
+625,Tata Consultancy Services,2014,India,189.9,Information Technology
+626,Tata Consultancy Services,2022,India,189.9,Information Technology
+627,Tata Consultancy Services,2023,India,189.9,Information Technology
+628,Tata Consultancy Services,2015,India,189.9,Information Technology
+629,Tata Consultancy Services,2017,India,189.9,Information Technology
+630,Tata Consultancy Services,2019,India,189.9,Information Technology
+631,Tata Consultancy Services,2021,India,189.9,Information Technology
+632,Tata Consultancy Services,2020,India,189.9,Information Technology
+633,Tata Consultancy Services,2018,India,189.9,Information Technology
+634,Tata Consultancy Services,2016,India,189.9,Information Technology
+635,ICICI Bank,2014,India,99.33,Financials
+636,ICICI Bank,2022,India,99.33,Financials
+637,ICICI Bank,2023,India,99.33,Financials
+638,ICICI Bank,2015,India,99.33,Financials
+639,ICICI Bank,2017,India,99.33,Financials
+640,ICICI Bank,2019,India,99.33,Financials
+641,ICICI Bank,2021,India,99.33,Financials
+642,ICICI Bank,2020,India,99.33,Financials
+643,ICICI Bank,2018,India,99.33,Financials
+644,ICICI Bank,2016,India,99.33,Financials
+645,Oil&Natural Gas,2014,India,46.31,Energy
+646,Oil&Natural Gas,2022,India,46.31,Energy
+647,Oil&Natural Gas,2023,India,46.31,Energy
+648,Oil&Natural Gas,2015,India,46.31,Energy
+649,Oil&Natural Gas,2017,India,46.31,Energy
+650,Oil&Natural Gas,2019,India,46.31,Energy
+651,Oil&Natural Gas,2021,India,46.31,Energy
+652,Oil&Natural Gas,2020,India,46.31,Energy
+653,Oil&Natural Gas,2018,India,46.31,Energy
+654,Oil&Natural Gas,2016,India,46.31,Energy
+655,Tata Motors,2014,India,50.61,Industries
+656,Tata Motors,2022,India,50.61,Industries
+657,Tata Motors,2023,India,50.61,Industries
+658,Tata Motors,2015,India,50.61,Industries
+659,Tata Motors,2017,India,50.61,Industries
+660,Tata Motors,2019,India,50.61,Industries
+661,Tata Motors,2021,India,50.61,Industries
+662,Tata Motors,2020,India,50.61,Industries
+663,Tata Motors,2018,India,50.61,Industries
+664,Tata Motors,2016,India,50.61,Industries
+665,State Bank of India,2014,India,91.89,Financials
+666,State Bank of India,2022,India,91.89,Financials
+667,State Bank of India,2023,India,91.89,Financials
+668,State Bank of India,2015,India,91.89,Financials
+669,State Bank of India,2017,India,91.89,Financials
+670,State Bank of India,2019,India,91.89,Financials
+671,State Bank of India,2021,India,91.89,Financials
+672,State Bank of India,2020,India,91.89,Financials
+673,State Bank of India,2018,India,91.89,Financials
+674,State Bank of India,2016,India,91.89,Financials
+675,Hindustan Unilever,2014,India,76.16,Consumer Staples
+676,Hindustan Unilever,2022,India,76.16,Consumer Staples
+677,Hindustan Unilever,2023,India,76.16,Consumer Staples
+678,Hindustan Unilever,2015,India,76.16,Consumer Staples
+679,Hindustan Unilever,2017,India,76.16,Consumer Staples
+680,Hindustan Unilever,2019,India,76.16,Consumer Staples
+681,Hindustan Unilever,2021,India,76.16,Consumer Staples
+682,Hindustan Unilever,2020,India,76.16,Consumer Staples
+683,Hindustan Unilever,2018,India,76.16,Consumer Staples
+684,Hindustan Unilever,2016,India,76.16,Consumer Staples
+685,Axis Bank,2014,India,42.72,Financials
+686,Axis Bank,2022,India,42.72,Financials
+687,Axis Bank,2023,India,42.72,Financials
+688,Axis Bank,2015,India,42.72,Financials
+689,Axis Bank,2017,India,42.72,Financials
+690,Axis Bank,2019,India,42.72,Financials
+691,Axis Bank,2021,India,42.72,Financials
+692,Axis Bank,2020,India,42.72,Financials
+693,Axis Bank,2018,India,42.72,Financials
+694,Axis Bank,2016,India,42.72,Financials
+695,Larsen & Toubro,2014,India,58.58,Industries
+696,Larsen & Toubro,2022,India,58.58,Industries
+697,Larsen & Toubro,2023,India,58.58,Industries
+698,Larsen & Toubro,2015,India,58.58,Industries
+699,Larsen & Toubro,2017,India,58.58,Industries
+700,Larsen & Toubro,2019,India,58.58,Industries
+701,Larsen & Toubro,2021,India,58.58,Industries
+702,Larsen & Toubro,2020,India,58.58,Industries
+703,Larsen & Toubro,2018,India,58.58,Industries
+704,Larsen & Toubro,2016,India,58.58,Industries
+705,Maruti Suzuki India,2014,India,45.66,Industries
+706,Maruti Suzuki India,2022,India,45.66,Industries
+707,Maruti Suzuki India,2023,India,45.66,Industries
+708,Maruti Suzuki India,2015,India,45.66,Industries
+709,Maruti Suzuki India,2017,India,45.66,Industries
+710,Maruti Suzuki India,2019,India,45.66,Industries
+711,Maruti Suzuki India,2021,India,45.66,Industries
+712,Maruti Suzuki India,2020,India,45.66,Industries
+713,Maruti Suzuki India,2018,India,45.66,Industries
+714,Maruti Suzuki India,2016,India,45.66,Industries
+715,Bajaj Finance,2014,India,53.94,Financials
+716,Bajaj Finance,2022,India,53.94,Financials
+717,Bajaj Finance,2023,India,53.94,Financials
+718,Bajaj Finance,2015,India,53.94,Financials
+719,Bajaj Finance,2017,India,53.94,Financials
+720,Bajaj Finance,2019,India,53.94,Financials
+721,Bajaj Finance,2021,India,53.94,Financials
+722,Bajaj Finance,2020,India,53.94,Financials
+723,Bajaj Finance,2018,India,53.94,Financials
+724,Bajaj Finance,2016,India,53.94,Financials
+725,Sun Pharmaceutical,2014,India,52.18,Health Care
+726,Sun Pharmaceutical,2022,India,52.18,Health Care
+727,Sun Pharmaceutical,2023,India,52.18,Health Care
+728,Sun Pharmaceutical,2015,India,52.18,Health Care
+729,Sun Pharmaceutical,2017,India,52.18,Health Care
+730,Sun Pharmaceutical,2019,India,52.18,Health Care
+731,Sun Pharmaceutical,2021,India,52.18,Health Care
+732,Sun Pharmaceutical,2020,India,52.18,Health Care
+733,Sun Pharmaceutical,2018,India,52.18,Health Care
+734,Sun Pharmaceutical,2016,India,52.18,Health Care
+735,Bharti Airtel,2014,India,107.39,Communication Services
+736,Bharti Airtel,2022,India,107.39,Communication Services
+737,Bharti Airtel,2023,India,107.39,Communication Services
+738,Bharti Airtel,2015,India,107.39,Communication Services
+739,Bharti Airtel,2017,India,107.39,Communication Services
+740,Bharti Airtel,2019,India,107.39,Communication Services
+741,Bharti Airtel,2021,India,107.39,Communication Services
+742,Bharti Airtel,2020,India,107.39,Communication Services
+743,Bharti Airtel,2018,India,107.39,Communication Services
+744,Bharti Airtel,2016,India,107.39,Communication Services
+745,NTPC Limited,2014,India,45.66,Energy
+746,NTPC Limited,2022,India,45.66,Energy
+747,NTPC Limited,2023,India,45.66,Energy
+748,NTPC Limited,2015,India,45.66,Energy
+749,NTPC Limited,2017,India,45.66,Energy
+750,NTPC Limited,2019,India,45.66,Energy
+751,NTPC Limited,2021,India,45.66,Energy
+752,NTPC Limited,2020,India,45.66,Energy
+753,NTPC Limited,2018,India,45.66,Energy
+754,NTPC Limited,2016,India,45.66,Energy
+755,Mahindra & Mahindra,2014,India,42.44,Consumer Discretionary
+756,Mahindra & Mahindra,2022,India,42.44,Consumer Discretionary
+757,Mahindra & Mahindra,2023,India,42.44,Consumer Discretionary
+758,Mahindra & Mahindra,2015,India,42.44,Consumer Discretionary
+759,Mahindra & Mahindra,2017,India,42.44,Consumer Discretionary
+760,Mahindra & Mahindra,2021,India,42.44,Consumer Discretionary
+761,Mahindra & Mahindra,2020,India,42.44,Consumer Discretionary
+762,Mahindra & Mahindra,2018,India,42.44,Consumer Discretionary
+763,Mahindra & Mahindra,2016,India,42.44,Consumer Discretionary
+764,Adani Enterprises,2014,India,43.12,Materials
+765,Adani Enterprises,2022,India,43.12,Materials
+766,Adani Enterprises,2023,India,43.12,Materials
+767,Adani Enterprises,2015,India,43.12,Materials
+768,Adani Enterprises,2017,India,43.12,Materials
+769,Adani Enterprises,2019,India,43.12,Materials
+770,Adani Enterprises,2021,India,43.12,Materials
+771,Adani Enterprises,2020,India,43.12,Materials
+772,Adani Enterprises,2018,India,43.12,Materials
+773,Adani Enterprises,2016,India,43.12,Materials
+774,ITC,2014,India,73.68,Consumer Staples
+775,ITC,2022,India,73.68,Consumer Staples
+776,ITC,2023,India,73.68,Consumer Staples
+777,ITC,2015,India,73.68,Consumer Staples
+778,ITC,2017,India,73.68,Consumer Staples
+779,ITC,2019,India,73.68,Consumer Staples
+780,ITC,2021,India,73.68,Consumer Staples
+781,ITC,2020,India,73.68,Consumer Staples
+782,ITC,2018,India,73.68,Consumer Staples
+783,ITC,2016,India,73.68,Consumer Staples
+784,Life Insurance Corporation of India,2014,India,89.05,Financials
+785,Life Insurance Corporation of India,2022,India,89.05,Financials
+786,Life Insurance Corporation of India,2023,India,89.05,Financials
+787,Life Insurance Corporation of India,2015,India,89.05,Financials
+788,Life Insurance Corporation of India,2017,India,89.05,Financials
+789,Life Insurance Corporation of India,2019,India,89.05,Financials
+790,Life Insurance Corporation of India,2021,India,89.05,Financials
+791,Life Insurance Corporation of India,2020,India,89.05,Financials
+792,Life Insurance Corporation of India,2018,India,89.05,Financials
+793,Life Insurance Corporation of India,2016,India,89.05,Financials
+794,UltraTech Cement,2014,India,39.27,Industries
+795,UltraTech Cement,2022,India,39.27,Industries
+796,UltraTech Cement,2023,India,39.27,Industries
+797,UltraTech Cement,2015,India,39.27,Industries
+798,UltraTech Cement,2017,India,39.27,Industries
+799,UltraTech Cement,2019,India,39.27,Industries
+800,UltraTech Cement,2021,India,39.27,Industries
+801,UltraTech Cement,2020,India,39.27,Industries
+802,UltraTech Cement,2018,India,39.27,Industries
+803,UltraTech Cement,2016,India,39.27,Industries
+804,Infosys,2014,India,90.16,Information Technology
+805,Infosys,2022,India,90.16,Information Technology
+806,Infosys,2023,India,90.16,Information Technology
+807,Infosys,2015,India,90.16,Information Technology
+808,Infosys,2017,India,90.16,Information Technology
+809,Infosys,2019,India,90.16,Information Technology
+810,Infosys,2021,India,90.16,Information Technology
+811,Infosys,2020,India,90.16,Information Technology
+812,Infosys,2018,India,90.16,Information Technology
+813,Infosys,2016,India,90.16,Information Technology

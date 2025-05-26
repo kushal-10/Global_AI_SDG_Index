@@ -27,10 +27,16 @@ def get_majority_vote(base_data, mini_data, nano_data) -> dict:
               "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0}
 
     classified = 0
+    unclassified = 0
+    total = len(base_data)
+    assert len(base_data) == len(mini_data)
+    assert len(base_data) == len(nano_data)
+
     for i in range(len(base_data)):
         base_cls = ast.literal_eval(base_data[i]["classification"])
         mini_cls = ast.literal_eval(mini_data[i]["classification"])
         nano_cls = ast.literal_eval(nano_data[i]["classification"])
+
 
         base_cleaned = merge_subtargets(base_cls)
         mini_cleaned = merge_subtargets(mini_cls)
@@ -50,8 +56,11 @@ def get_majority_vote(base_data, mini_data, nano_data) -> dict:
 
         if classified_flag:
             classified += 1
+        else:
+            unclassified += 1
 
-    return result, classified
+    assert classified + unclassified == total
+    return result, classified, unclassified, total
 
 
 def get_frequency():
@@ -62,7 +71,10 @@ def get_frequency():
     REVN = []
     GOAL = []
     CLSD = []
+    UNCLSD = []
+    REGEX = []
 
+    passages = 0
     BASE_DIR = "annual_txts_fitz"
     for country in os.listdir(BASE_DIR):
         if os.path.isdir(os.path.join(BASE_DIR, country)):
@@ -72,65 +84,55 @@ def get_frequency():
                     years = os.listdir(os.path.join(BASE_DIR, country, company))
                     for year in years:
                         if os.path.isdir(os.path.join(BASE_DIR, country, company, year)):
-                            if os.path.exists(os.path.join(BASE_DIR, country, company, year, "classifications.json")):
-                                base_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_41.json"))
-                                mini_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications.json"))
-                                nano_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_nano.json"))
-                                final_result, classified = get_majority_vote(base_data, mini_data, nano_data)
+                            if os.path.exists(os.path.join(BASE_DIR, country, company, year, "regex_output.json")):
+                                regex_data = load_json(os.path.join(BASE_DIR, country, company, year, "semantic_output.json"))
+                                regex = len(regex_data)
 
-                                result_pth = os.path.join(BASE_DIR, country, company, year, "classifications_41.json")
+                                if os.path.exists(os.path.join(BASE_DIR, country, company, year, "classifications.json")):
+                                    base_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_41.json"))
+                                    mini_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications.json"))
+                                    nano_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_nano.json"))
+                                    final_result, classified, unclassified, total = get_majority_vote(base_data, mini_data, nano_data)
+
+                                    passages += total
+                                else:
+                                    classified = 0
+                                    unclassified = 0
+                                    total = 0
+
+                                result_pth = os.path.join(BASE_DIR, country, company, year, "regex_output.json")
                                 splits = result_pth.split("/")
                                 country = splits[1]
                                 year = splits[-2]
                                 company_splits = splits[-3].split("_")
                                 company_name = company_splits[0].split(".")[-1]
 
-
-
-
-
-                                company_revenue = company_splits[1]
-                                company_revenue = company_revenue.replace("$", "")
-                                if "T" in company_revenue:
-                                    company_revenue = company_revenue.replace("T", "")
-                                    company_revenue = company_revenue.strip()
-                                    company_revenue = float(company_revenue) * 1000
-                                elif "B" in company_revenue:
-                                    company_revenue = company_revenue.replace("B", "")
-                                    company_revenue = company_revenue.strip()
-                                    company_revenue = float(company_revenue)
-
-
-                                company_sector = company_splits[2]
-
                                 # Fix EON data
                                 if company_name == "E":
                                     company_name = "EON"
-                                    company_revenue = 38.46
-                                    company_sector = "Energy"
 
                                 FIRM.append(company_name)
                                 YEAR.append(year)
                                 CTRY.append(country)
-                                REVN.append(company_revenue)
-                                SECT.append(company_sector)
-                                GOAL.append(final_result)
                                 CLSD.append(classified)
+                                UNCLSD.append(unclassified)
+                                REGEX.append(regex)
+                                assert regex >= classified+unclassified
+
 
     df = pd.DataFrame(
         {
             "Company": FIRM,
             "Year": YEAR,
             "Country": CTRY,
-            "Revenue": REVN,
-            "Sector": SECT,
+            "Unclassified": UNCLSD,
             "Classified": CLSD,
-            "Goals": GOAL
+            "Regex": REGEX,
         }
     )
-
+    print(passages)
     return df
 
 if __name__ == "__main__":
     df = get_frequency()
-    df.to_csv(os.path.join("src", "results", "frequency.csv"))
+    df.to_csv(os.path.join("src", "results", "classified.csv"))
