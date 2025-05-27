@@ -8,7 +8,7 @@ from tqdm import tqdm
 import logging
 import os
 
-from src.retrievalv2.keys import AI_TERMS, SKIP_REPORTS
+from src.zh.keys import AI_TERMS
 from src.retrievalv2.chunks import get_chunks
 
 # Set up basic logger
@@ -16,7 +16,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     filemode="w",
-    filename=os.path.join("src", "retrievalv2", "regex_red.log"))
+    filename=os.path.join("src", "zh", "regex.log"))
 
 
 # Compile a single regex pattern for all terms, case-insensitive
@@ -42,8 +42,7 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
     for dirpath, dirnames, filenames in os.walk(input_dir):
         if 'results.txt' in filenames:
             file_path = os.path.join(dirpath, 'results.txt')
-            if file_path not in SKIP_REPORTS:
-                reports.append(file_path)
+            reports.append(file_path)
 
     total_chunks = 0 # Num chunks (overall)
     no_matches = 0 # Num reports
@@ -77,8 +76,8 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
 
 if __name__ == "__main__":
 
-    BASE_DIR = "annual_txts_fitz"
-    OUTPUT_FILE = "regex_reduced_10kw.json"
-    OUTPUT_DIR = "annual_results"
+    BASE_DIR = "annual_txts_zh"
+    OUTPUT_FILE = "regex.json"
+    OUTPUT_DIR = "annual_txts_zh"
     extract_ai_passages(input_dir=BASE_DIR, output_dir=OUTPUT_DIR, output_file=OUTPUT_FILE)
 

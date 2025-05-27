@@ -52,6 +52,7 @@ def scan_txt_files(base_dir):
 
     logging.info(f"Found {len(non_ascii_files)} non_ascii files out of {total_files}")
     print(non_ascii_files)
+    print(len(non_ascii_files))
     return non_ascii_files
 
 if __name__ == '__main__':
