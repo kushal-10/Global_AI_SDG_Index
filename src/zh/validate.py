@@ -6,8 +6,8 @@ import statistics
 import pandas as pd
 
 def load_json(json_file):
-    with open(json_file) as json_file:
-        return json.load(json_file)
+    with open(json_file, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def get_firms(base_dir):
@@ -24,14 +24,21 @@ def validate_counts(firm_list):
     total = 0
     for file_path in tqdm(firm_list):
         json_data = load_json(file_path)
+        filtered_data = []
         for cls_obj in json_data:
             classification = cls_obj["classification"]
             cls_dict = ast.literal_eval(classification)
-            # print(cls_dict['Classification'])
             if cls_dict["Classification"].lower() == "yes":
                 counts += 1
+                filtered_data.append(cls_obj)
             total += 1
-    print(counts/197)
+
+        save_path = file_path.replace("semantic.json", "filtered.json")
+        with open(save_path, "w", encoding="utf-8") as f:
+            json.dump(filtered_data, f, indent=4, ensure_ascii=False)
+
+
+    print(counts, total)
     return counts, total, len(firm_list)
 
 def clean_json():
@@ -43,40 +50,14 @@ def clean_json():
         with open(fl, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-def median_vals(firm_list):
-    counts = []
-    df = {
-        "firms": [],
-        "counts": []
-    }
-    for file_path in tqdm(firm_list):
-        json_data = load_json(file_path)
-        sub_counts = 0
-        df['firms'].append(file_path)
-        for cls_obj in json_data:
-            classification = cls_obj["classification"]
-            cls_dict = ast.literal_eval(classification)
-            # print(cls_dict['Classification'])
-            if cls_dict["Classification"].lower() == "yes":
-                sub_counts += 1
-
-        df["counts"].append(sub_counts)
-        counts.append(sub_counts)
-
-    df = pd.DataFrame(df)
-    df.to_csv("src/results/counts.csv", index=False)
-    return statistics.median(counts)
-
-
-
 
 if __name__ == "__main__":
-    chinese_firms = get_firms("annual_results/China")
-    indian_firms = get_firms("annual_results/India")
-    german_firms = get_firms("annual_results/Germany")
-    us_firms = get_firms("annual_results/USA")
+    chinese_firms = get_firms("annual_zh/annual_txts_zh/China")
+    # indian_firms = get_firms("annual_zh/annual_txts_zh/India")
+    # german_firms = get_firms("annual_zh/annual_txts_zh/Germany")
+    # us_firms = get_firms("annual_zh/annual_txts_zh/USA")
 
-    validate_counts(german_firms)
+    validate_counts(chinese_firms)
     # valid1, total1, firms1 = validate_counts(chinese_firms)
     # valid2, total2, firms2 = validate_counts(indian_firms)
     #
