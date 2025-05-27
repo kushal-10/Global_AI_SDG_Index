@@ -41,8 +41,8 @@ def write_txt(content: str = "temp", file: str = "temp.txt"):
 
 if __name__ == '__main__':
 
-    txt_dir = 'annual_txts_fitz'
-    dir = 'annual_reports'
+    txt_dir = 'annual_txts_zh'
+    dir = 'annual_chinese'
 
     countries = os.listdir(dir)
     for country in countries:

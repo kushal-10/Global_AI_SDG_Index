@@ -1,0 +1,229 @@
+firms,counts
+annual_results/India/State Bank of India/2022/semantic.json,4
+annual_results/India/State Bank of India/2023/semantic.json,5
+annual_results/India/State Bank of India/2019/semantic.json,3
+annual_results/India/State Bank of India/2021/semantic.json,2
+annual_results/India/State Bank of India/2020/semantic.json,2
+annual_results/India/State Bank of India/2018/semantic.json,1
+annual_results/India/ICICI Bank/2022/semantic.json,4
+annual_results/India/ICICI Bank/2023/semantic.json,5
+annual_results/India/ICICI Bank/2017/semantic.json,4
+annual_results/India/ICICI Bank/2019/semantic.json,3
+annual_results/India/ICICI Bank/2021/semantic.json,4
+annual_results/India/ICICI Bank/2020/semantic.json,4
+annual_results/India/ICICI Bank/2018/semantic.json,2
+annual_results/India/ICICI Bank/2016/semantic.json,1
+annual_results/India/Reliance Industries/2022/semantic.json,8
+annual_results/India/Reliance Industries/2023/semantic.json,6
+annual_results/India/Reliance Industries/2017/semantic.json,4
+annual_results/India/Reliance Industries/2019/semantic.json,19
+annual_results/India/Reliance Industries/2021/semantic.json,11
+annual_results/India/Reliance Industries/2020/semantic.json,18
+annual_results/India/Reliance Industries/2018/semantic.json,15
+annual_results/India/Bajaj Auto/2015/semantic.json,0
+annual_results/India/Infosys/2014/semantic.json,3
+annual_results/India/Infosys/2022/semantic.json,6
+annual_results/India/Infosys/2023/semantic.json,8
+annual_results/India/Infosys/2015/semantic.json,6
+annual_results/India/Infosys/2017/semantic.json,12
+annual_results/India/Infosys/2019/semantic.json,7
+annual_results/India/Infosys/2021/semantic.json,7
+annual_results/India/Infosys/2020/semantic.json,7
+annual_results/India/Infosys/2018/semantic.json,12
+annual_results/India/Infosys/2016/semantic.json,6
+annual_results/India/Mahindra & Mahindra/2022/semantic.json,5
+annual_results/India/Mahindra & Mahindra/2023/semantic.json,8
+annual_results/India/Mahindra & Mahindra/2017/semantic.json,0
+annual_results/India/Mahindra & Mahindra/2021/semantic.json,1
+annual_results/India/Mahindra & Mahindra/2020/semantic.json,2
+annual_results/India/Mahindra & Mahindra/2018/semantic.json,3
+annual_results/India/Mahindra & Mahindra/2016/semantic.json,1
+annual_results/India/Life Insurance Corporation of India/2022/semantic.json,4
+annual_results/India/Life Insurance Corporation of India/2023/semantic.json,0
+annual_results/India/Life Insurance Corporation of India/2021/semantic.json,1
+annual_results/India/Life Insurance Corporation of India/2020/semantic.json,1
+annual_results/India/Hindustan Unilever/2022/semantic.json,2
+annual_results/India/Hindustan Unilever/2023/semantic.json,9
+annual_results/India/Hindustan Unilever/2017/semantic.json,1
+annual_results/India/Hindustan Unilever/2019/semantic.json,2
+annual_results/India/Hindustan Unilever/2021/semantic.json,6
+annual_results/India/Hindustan Unilever/2020/semantic.json,3
+annual_results/India/Hindustan Unilever/2018/semantic.json,2
+annual_results/India/HCL Technologies/2014/semantic.json,1
+annual_results/India/HCL Technologies/2022/semantic.json,11
+annual_results/India/HCL Technologies/2023/semantic.json,12
+annual_results/India/HCL Technologies/2015/semantic.json,4
+annual_results/India/HCL Technologies/2017/semantic.json,16
+annual_results/India/HCL Technologies/2019/semantic.json,7
+annual_results/India/HCL Technologies/2021/semantic.json,14
+annual_results/India/HCL Technologies/2020/semantic.json,7
+annual_results/India/HCL Technologies/2018/semantic.json,8
+annual_results/India/HCL Technologies/2016/semantic.json,11
+annual_results/India/Tata Consultancy Services/2014/semantic.json,2
+annual_results/India/Tata Consultancy Services/2022/semantic.json,16
+annual_results/India/Tata Consultancy Services/2023/semantic.json,15
+annual_results/India/Tata Consultancy Services/2015/semantic.json,5
+annual_results/India/Tata Consultancy Services/2017/semantic.json,10
+annual_results/India/Tata Consultancy Services/2019/semantic.json,8
+annual_results/India/Tata Consultancy Services/2021/semantic.json,16
+annual_results/India/Tata Consultancy Services/2020/semantic.json,6
+annual_results/India/Tata Consultancy Services/2018/semantic.json,10
+annual_results/India/Tata Consultancy Services/2016/semantic.json,10
+annual_results/India/Bajaj Finance/2022/semantic.json,2
+annual_results/India/Bajaj Finance/2023/semantic.json,1
+annual_results/India/Bajaj Finance/2020/semantic.json,3
+annual_results/India/Bajaj Finance/2016/semantic.json,1
+annual_results/India/Sun Pharmaceutical/2023/semantic.json,1
+annual_results/India/Sun Pharmaceutical/2019/semantic.json,1
+annual_results/India/Sun Pharmaceutical/2018/semantic.json,1
+annual_results/India/NTPC Limited/2022/semantic.json,2
+annual_results/India/NTPC Limited/2023/semantic.json,1
+annual_results/India/NTPC Limited/2019/semantic.json,1
+annual_results/India/NTPC Limited/2021/semantic.json,2
+annual_results/India/NTPC Limited/2020/semantic.json,1
+annual_results/India/NTPC Limited/2016/semantic.json,2
+annual_results/India/Axis Bank/2022/semantic.json,4
+annual_results/India/Axis Bank/2023/semantic.json,10
+annual_results/India/Axis Bank/2017/semantic.json,6
+annual_results/India/Axis Bank/2019/semantic.json,2
+annual_results/India/Axis Bank/2021/semantic.json,13
+annual_results/India/Axis Bank/2020/semantic.json,12
+annual_results/India/Axis Bank/2018/semantic.json,8
+annual_results/India/Bharti Airtel/2022/semantic.json,8
+annual_results/India/Bharti Airtel/2023/semantic.json,5
+annual_results/India/Bharti Airtel/2017/semantic.json,2
+annual_results/India/Bharti Airtel/2019/semantic.json,10
+annual_results/India/Bharti Airtel/2021/semantic.json,7
+annual_results/India/Bharti Airtel/2020/semantic.json,8
+annual_results/India/Bharti Airtel/2018/semantic.json,4
+annual_results/India/Bharti Airtel/2016/semantic.json,1
+annual_results/India/Kotak Mahindra Bank/2022/semantic.json,5
+annual_results/India/Kotak Mahindra Bank/2023/semantic.json,7
+annual_results/India/Kotak Mahindra Bank/2017/semantic.json,2
+annual_results/India/Kotak Mahindra Bank/2019/semantic.json,6
+annual_results/India/Kotak Mahindra Bank/2021/semantic.json,9
+annual_results/India/Kotak Mahindra Bank/2020/semantic.json,3
+annual_results/India/Kotak Mahindra Bank/2018/semantic.json,3
+annual_results/India/Adani Enterprises/2022/semantic.json,2
+annual_results/India/Adani Enterprises/2023/semantic.json,5
+annual_results/India/Adani Enterprises/2019/semantic.json,3
+annual_results/India/Adani Enterprises/2021/semantic.json,1
+annual_results/India/Adani Enterprises/2020/semantic.json,1
+annual_results/India/ITC/2022/semantic.json,7
+annual_results/India/ITC/2023/semantic.json,9
+annual_results/India/ITC/2017/semantic.json,2
+annual_results/India/ITC/2019/semantic.json,6
+annual_results/India/ITC/2021/semantic.json,8
+annual_results/India/ITC/2020/semantic.json,5
+annual_results/India/ITC/2018/semantic.json,1
+annual_results/India/ITC/2016/semantic.json,0
+annual_results/India/Tata Motors/2022/semantic.json,5
+annual_results/India/Tata Motors/2023/semantic.json,1
+annual_results/India/Tata Motors/2019/semantic.json,2
+annual_results/India/Tata Motors/2021/semantic.json,7
+annual_results/India/Tata Motors/2020/semantic.json,2
+annual_results/India/UltraTech Cement/2022/semantic.json,2
+annual_results/India/UltraTech Cement/2023/semantic.json,2
+annual_results/India/UltraTech Cement/2021/semantic.json,1
+annual_results/India/UltraTech Cement/2020/semantic.json,3
+annual_results/India/UltraTech Cement/2018/semantic.json,1
+annual_results/India/Maruti Suzuki India/2022/semantic.json,5
+annual_results/India/Maruti Suzuki India/2023/semantic.json,6
+annual_results/India/Maruti Suzuki India/2019/semantic.json,4
+annual_results/India/Maruti Suzuki India/2021/semantic.json,3
+annual_results/India/Maruti Suzuki India/2020/semantic.json,4
+annual_results/India/Maruti Suzuki India/2018/semantic.json,1
+annual_results/India/Oil&Natural Gas/2022/semantic.json,2
+annual_results/India/Oil&Natural Gas/2023/semantic.json,3
+annual_results/India/Oil&Natural Gas/2021/semantic.json,2
+annual_results/India/Oil&Natural Gas/2018/semantic.json,1
+annual_results/India/HDFC Bank/2022/semantic.json,7
+annual_results/India/HDFC Bank/2023/semantic.json,8
+annual_results/India/HDFC Bank/2015/semantic.json,1
+annual_results/India/HDFC Bank/2017/semantic.json,2
+annual_results/India/HDFC Bank/2019/semantic.json,7
+annual_results/India/HDFC Bank/2021/semantic.json,1
+annual_results/India/HDFC Bank/2020/semantic.json,5
+annual_results/India/HDFC Bank/2018/semantic.json,4
+annual_results/India/HDFC Bank/2016/semantic.json,2
+annual_results/India/Larsen & Toubro/2022/semantic.json,8
+annual_results/India/Larsen & Toubro/2023/semantic.json,4
+annual_results/India/Larsen & Toubro/2017/semantic.json,5
+annual_results/India/Larsen & Toubro/2019/semantic.json,25
+annual_results/India/Larsen & Toubro/2021/semantic.json,3
+annual_results/India/Larsen & Toubro/2020/semantic.json,19
+annual_results/India/Larsen & Toubro/2018/semantic.json,10
+annual_results/India/Larsen & Toubro/2016/semantic.json,3
+annual_results/China/Pingan Insurance/2022/semantic.json,7
+annual_results/China/Pingan Insurance/2023/semantic.json,3
+annual_results/China/Pingan Insurance/2017/semantic.json,15
+annual_results/China/Pingan Insurance/2019/semantic.json,15
+annual_results/China/Pingan Insurance/2021/semantic.json,22
+annual_results/China/Pingan Insurance/2020/semantic.json,23
+annual_results/China/Pingan Insurance/2018/semantic.json,22
+annual_results/China/Kweichow Moutai/2023/semantic.json,1
+annual_results/China/ICBC/2022/semantic.json,3
+annual_results/China/ICBC/2023/semantic.json,5
+annual_results/China/ICBC/2017/semantic.json,3
+annual_results/China/ICBC/2019/semantic.json,3
+annual_results/China/ICBC/2021/semantic.json,3
+annual_results/China/ICBC/2020/semantic.json,3
+annual_results/China/ICBC/2018/semantic.json,1
+annual_results/China/ICBC/2016/semantic.json,2
+annual_results/China/China Construction Bank/2022/semantic.json,5
+annual_results/China/China Construction Bank/2023/semantic.json,8
+annual_results/China/China Construction Bank/2017/semantic.json,4
+annual_results/China/China Construction Bank/2019/semantic.json,5
+annual_results/China/China Construction Bank/2021/semantic.json,4
+annual_results/China/China Construction Bank/2020/semantic.json,6
+annual_results/China/China Construction Bank/2018/semantic.json,7
+annual_results/China/Agricultural Bank Of China/2022/semantic.json,1
+annual_results/China/Agricultural Bank Of China/2023/semantic.json,2
+annual_results/China/Agricultural Bank Of China/2017/semantic.json,3
+annual_results/China/Agricultural Bank Of China/2019/semantic.json,2
+annual_results/China/Agricultural Bank Of China/2021/semantic.json,1
+annual_results/China/Agricultural Bank Of China/2020/semantic.json,3
+annual_results/China/Agricultural Bank Of China/2018/semantic.json,2
+annual_results/China/BYD/2022/semantic.json,4
+annual_results/China/BYD/2023/semantic.json,4
+annual_results/China/BYD/2021/semantic.json,2
+annual_results/China/BYD/2020/semantic.json,2
+annual_results/China/Alibaba/2022/semantic.json,10
+annual_results/China/Alibaba/2023/semantic.json,23
+annual_results/China/Alibaba/2021/semantic.json,15
+annual_results/China/Alibaba/2020/semantic.json,15
+annual_results/China/CM bank/2022/semantic.json,1
+annual_results/China/CM bank/2023/semantic.json,8
+annual_results/China/CM bank/2017/semantic.json,10
+annual_results/China/CM bank/2019/semantic.json,4
+annual_results/China/CM bank/2021/semantic.json,6
+annual_results/China/CM bank/2020/semantic.json,6
+annual_results/China/CM bank/2018/semantic.json,4
+annual_results/China/CM bank/2016/semantic.json,7
+annual_results/China/CATL/2023/semantic.json,1
+annual_results/China/CATL/2021/semantic.json,1
+annual_results/China/China Mobile/2022/semantic.json,8
+annual_results/China/China Mobile/2023/semantic.json,9
+annual_results/China/China Mobile/2017/semantic.json,2
+annual_results/China/China Mobile/2019/semantic.json,4
+annual_results/China/China Mobile/2021/semantic.json,6
+annual_results/China/China Mobile/2020/semantic.json,3
+annual_results/China/China Mobile/2018/semantic.json,5
+annual_results/China/CNOOC/2018/semantic.json,1
+annual_results/China/Tencent/2022/semantic.json,4
+annual_results/China/Tencent/2023/semantic.json,3
+annual_results/China/Tencent/2017/semantic.json,6
+annual_results/China/Tencent/2019/semantic.json,1
+annual_results/China/Tencent/2021/semantic.json,2
+annual_results/China/Tencent/2020/semantic.json,7
+annual_results/China/Tencent/2018/semantic.json,0
+annual_results/China/Tencent/2016/semantic.json,2
+annual_results/China/PetroChina/2019/semantic.json,1
+annual_results/China/PetroChina/2020/semantic.json,3
+annual_results/China/Meituan/2022/semantic.json,1
+annual_results/China/Meituan/2023/semantic.json,1
+annual_results/China/Meituan/2019/semantic.json,2
+annual_results/China/Meituan/2021/semantic.json,3
+annual_results/China/Meituan/2020/semantic.json,2
+annual_results/China/Meituan/2018/semantic.json,3
+annual_results/China/China Yangtze Power/2018/semantic.json,0

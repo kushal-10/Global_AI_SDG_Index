@@ -1,15 +1,3 @@
-"""
-USE GPT-4.1-mini to classify if the extracted passage actually mentions AI or related terms,
-Some passages may mention "AI" in a different context, ref LNT 2015 for an example
-
-Cost Analysis - IP token = 1.24M approx
-
-MODEL     IP      OP
-4.1mini   1       0.7       1.7$ for 128k passes
-4.1       2.5     1         3.5$
-
-"""
-
 from openai import OpenAI
 import os
 import json
@@ -19,7 +7,7 @@ import logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    filename=os.path.join("src", "retrievalv2", "semantic_filter.log"),
+                    filename=os.path.join("src", "zh", "semantic_filter_us.log"),
                     filemode='w')
 
 client = OpenAI()
@@ -53,29 +41,20 @@ def classify(input_prompt: str):
     return completion.choices[0].message.content
 
 
-def get_classifications(BASE_DIR: str = "annual_results", save_name: str = "semantic_reduced_10kw.json"):
+def get_classifications(BASE_DIR: str = "annual_results", save_name: str = "semantic.json"):
     """
     Finegrained Filter for AI related passages from regex_output.json
     Saves filtered chunks in save_name.json under same folder as regex_output.json
     """
 
     regex_outputs = []
-    ind = 0
-    chn = 0
     for dirname, _, filenames in os.walk(BASE_DIR):
         for filename in filenames:
-            if filename.endswith("regex_reduced_10kw.json"):
+            if filename.endswith("regex.json"):
                 splits = dirname.split("/")
-                if 'China'==splits[1]:
+                if 'USA'== splits[1]:
                     regex_outputs.append(os.path.join(dirname, filename))
-                    chn += 1
-                if 'India'==splits[1]:
-                    regex_outputs.append(os.path.join(dirname, filename))
-                    ind += 1
-                # regex_outputs.append(os.path.join(dirname, filename))
 
-    print(len(regex_outputs), ind, chn)
-    print(regex_outputs[0])
 
     for regex_output in tqdm(regex_outputs):
         with open(regex_output) as f:
@@ -83,7 +62,7 @@ def get_classifications(BASE_DIR: str = "annual_results", save_name: str = "sema
             chunks = regex_data["chunks"]
 
         # Create a save file for semantic filter outputs
-        save_path = regex_output.replace("regex_reduced_10kw.json", save_name)
+        save_path = regex_output.replace("regex.json", save_name)
         if os.path.exists(save_path):
             logging.info(f"Skipping {regex_output}")
             continue # Process only new files
@@ -102,7 +81,6 @@ def get_classifications(BASE_DIR: str = "annual_results", save_name: str = "sema
 
 
 if __name__ == '__main__':
-
     get_classifications()
 
 
