@@ -1,0 +1,422 @@
+{
+    "Amazon": {
+        "company_dir": "5.Amazon_$1.761 T_Information Tech",
+        "company_revenue": 1761.0,
+        "company_sector": "Information Technology"
+    },
+    "APPLE": {
+        "company_dir": "1.APPLE_$3.371 T_Information Tech",
+        "company_revenue": 3371.0,
+        "company_sector": "Information Technology"
+    },
+    "Exxon Mobil": {
+        "company_dir": "15.Exxon Mobil_$500.44 B_Energy",
+        "company_revenue": 500.44,
+        "company_sector": "Energy"
+    },
+    "Meta Platforms (Facebook)": {
+        "company_dir": "6.Meta Platforms (Facebook)_$1.234 T_Information Tech",
+        "company_revenue": 1234.0,
+        "company_sector": "Information Technology"
+    },
+    "Berkshire Hathaway": {
+        "company_dir": "7.Berkshire Hathaway_$922.79 B_Financials",
+        "company_revenue": 922.79,
+        "company_sector": "Financials"
+    },
+    "NVIDIA": {
+        "company_dir": "3.NVIDIA_$2.638 T_Information Tech",
+        "company_revenue": 2638.0,
+        "company_sector": "Information Technology"
+    },
+    "Walmart": {
+        "company_dir": "11.Walmart_$616.05 B_Consumer Staples",
+        "company_revenue": 616.05,
+        "company_sector": "Consumer Staples"
+    },
+    "Johnson&Johnson": {
+        "company_dir": "18.Johnson&Johnson_$395.70 B_Health Care",
+        "company_revenue": 395.7,
+        "company_sector": "Health Care"
+    },
+    "Procter&Gamble": {
+        "company_dir": "17.Procter&Gamble_$412.58 B_Consumer Staples",
+        "company_revenue": 412.58,
+        "company_sector": "Consumer Staples"
+    },
+    "United Health": {
+        "company_dir": "13.United Health_$551.16 B_Health Care",
+        "company_revenue": 551.16,
+        "company_sector": "Health Care"
+    },
+    "Morgan&Chase": {
+        "company_dir": "12.J.P.Morgan&Chase_$604.48 B_Financial Service",
+        "company_revenue": 604.48,
+        "company_sector": "Financials"
+    },
+    "Mastercard": {
+        "company_dir": "16.Mastercard_$439.85 B_Financial Service",
+        "company_revenue": 439.85,
+        "company_sector": "Financials"
+    },
+    "Eli Lilly": {
+        "company_dir": "8.Eli Lilly_$724.33 B_Health Care",
+        "company_revenue": 724.33,
+        "company_sector": "Health Care"
+    },
+    "Oracle": {
+        "company_dir": "19.Oracle_$390.80 B_Information Technology",
+        "company_revenue": 390.8,
+        "company_sector": "Information Technology"
+    },
+    "Microsoft": {
+        "company_dir": "2.Microsoft_$3.036 T_Information Tech",
+        "company_revenue": 3036.0,
+        "company_sector": "Information Technology"
+    },
+    "Costco": {
+        "company_dir": "20.Costco_$388.66 B_Consumer Stapler",
+        "company_revenue": 388.66,
+        "company_sector": "Consumer Staples"
+    },
+    "Visa": {
+        "company_dir": "14.Visa_$543.62 B_Financial Service",
+        "company_revenue": 543.62,
+        "company_sector": "Financials"
+    },
+    "Broadcom": {
+        "company_dir": "9.Broadcom_$669.46 B_Information Tech",
+        "company_revenue": 669.46,
+        "company_sector": "Information Technology"
+    },
+    "Alphabet(Google)": {
+        "company_dir": "4.Alphabet(Google)_$2.062 T_Information Tech",
+        "company_revenue": 2062.0,
+        "company_sector": "Information Technology"
+    },
+    "Tesla": {
+        "company_dir": "10.Tesla_$663.43B_Industries",
+        "company_revenue": 663.43,
+        "company_sector": "Industries"
+    },
+    "Adidas": {
+        "company_dir": "13.Adidas_$244.57_Consumer Discretionary",
+        "company_revenue": 244.57,
+        "company_sector": "Consumer Discretionary"
+    },
+    "Siemens Healthineers": {
+        "company_dir": "9.Siemens Healthineers_$58.91 B_Health Care",
+        "company_revenue": 58.91,
+        "company_sector": "Health Care"
+    },
+    "BMW": {
+        "company_dir": "11.BMW_$55.03 B_Industrials",
+        "company_revenue": 55.03,
+        "company_sector": "Industries"
+    },
+    "BASF": {
+        "company_dir": "14.BASF_$42.93 B_Industrials",
+        "company_revenue": 42.93,
+        "company_sector": "Industries"
+    },
+    "Infineon": {
+        "company_dir": "16.Infineon_$41.66 B_Industrials",
+        "company_revenue": 41.66,
+        "company_sector": "Industries"
+    },
+    "DHL Group": {
+        "company_dir": "12.DHL Group_$49.82 B_Industrials",
+        "company_revenue": 49.82,
+        "company_sector": "Industries"
+    },
+    "Mercedes-Benz": {
+        "company_dir": "6.Mercedes-Benz_$68.14 B_Consumer Discretionary",
+        "company_revenue": 68.14,
+        "company_sector": "Consumer Discretionary"
+    },
+    "SAP": {
+        "company_dir": "1.SAP_$240.94 B_Information Tech",
+        "company_revenue": 240.94,
+        "company_sector": "Information Technology"
+    },
+    "Hannover Rück": {
+        "company_dir": "19.Hannover Rück_$33.67 B_FInancial Service",
+        "company_revenue": 33.67,
+        "company_sector": "Financials"
+    },
+    "Siemens": {
+        "company_dir": "2.Siemens_$135.42 B_Industrials",
+        "company_revenue": 135.42,
+        "company_sector": "Industries"
+    },
+    "Deutsche Börse": {
+        "company_dir": "15.Deutsche Börse_$41.91 B_Financial Service",
+        "company_revenue": 41.91,
+        "company_sector": "Financials"
+    },
+    "Porsche": {
+        "company_dir": "7.Porsche_$67.40 B_Consumer Discretionary",
+        "company_revenue": 67.4,
+        "company_sector": "Consumer Discretionary"
+    },
+    "Merck": {
+        "company_dir": "5.Merck_$78.90 B_Health Care",
+        "company_revenue": 78.9,
+        "company_sector": "Health Care"
+    },
+    "Munich RE": {
+        "company_dir": "8.Munich RE_$63.39_Financials",
+        "company_revenue": 63.39,
+        "company_sector": "Financials"
+    },
+    "Beiersdorf": {
+        "company_dir": "20.Beiersdorf_$32.13 B_Consumer Staplers",
+        "company_revenue": 32.13,
+        "company_sector": "Consumer Staples"
+    },
+    "Allianz": {
+        "company_dir": "4.Allianz_$106.68 B_Financials",
+        "company_revenue": 106.68,
+        "company_sector": "Financials"
+    },
+    "Deutsche Telekom": {
+        "company_dir": "3.Deutsche Telekom_$130.56 B_Communication Services",
+        "company_revenue": 130.56,
+        "company_sector": "Communication Services"
+    },
+    "Henkel": {
+        "company_dir": "18.Henkel_$35.64 B_Consumer Staplers",
+        "company_revenue": 35.64,
+        "company_sector": "Consumer Staples"
+    },
+    "EON": {
+        "company_dir": "17.EON_$38.46 B_Energy",
+        "company_revenue": 38.46,
+        "company_sector": "Energy"
+    },
+    "Volkswagen": {
+        "company_dir": "11.Volkswagen_$52.66 B_Consumer Discretionary",
+        "company_revenue": 52.66,
+        "company_sector": "Consumer Discretionary"
+    },
+    "China Iife Insurance": {
+        "company_dir": "13.China Iife Insurance_$111.24 B_Financial Service",
+        "company_revenue": 111.24,
+        "company_sector": "Financials"
+    },
+    "Tencent": {
+        "company_dir": "1.Tencent_$428.32 B_Information Tech",
+        "company_revenue": 428.32,
+        "company_sector": "Information Technology"
+    },
+    "Kweichow Moutai": {
+        "company_dir": "3.Kweichow Moutai_$243.08 B_Consumer Stapler",
+        "company_revenue": 243.08,
+        "company_sector": "Consumer Staples"
+    },
+    "Agricultural Bank Of China": {
+        "company_dir": "4.Agricultural Bank of China_$221.35 B_Financials",
+        "company_revenue": 221.35,
+        "company_sector": "Financials"
+    },
+    "Sinopec": {
+        "company_dir": "15.Sinopec_$104.55 B_Energy",
+        "company_revenue": 104.55,
+        "company_sector": "Energy"
+    },
+    "PetroChina": {
+        "company_dir": "5.PetroChina_$218.98 B_Energy",
+        "company_revenue": 218.98,
+        "company_sector": "Energy"
+    },
+    "Meituan": {
+        "company_dir": "20.Meituan_$93.17 B_Information Technology",
+        "company_revenue": 93.17,
+        "company_sector": "Information Technology"
+    },
+    "China Mobile": {
+        "company_dir": "6.China Mobile_$206.74 B_Communication Services",
+        "company_revenue": 206.74,
+        "company_sector": "Communication Services"
+    },
+    "CATL": {
+        "company_dir": "12.CATL_$115.41 B_Industrials",
+        "company_revenue": 115.41,
+        "company_sector": "Industries"
+    },
+    "Alibaba": {
+        "company_dir": "7.Alibaba_$187.26 B_Information Tech",
+        "company_revenue": 187.26,
+        "company_sector": "Information Technology"
+    },
+    "CNOOC": {
+        "company_dir": "11.CNOOC_$124.70 B_Energy",
+        "company_revenue": 124.7,
+        "company_sector": "Energy"
+    },
+    "ICBC": {
+        "company_dir": "2.ICBC_$267.08 B_Financials",
+        "company_revenue": 267.08,
+        "company_sector": "Financials"
+    },
+    "China Yangtze Power": {
+        "company_dir": "17.China Yangtze Power_$100.53 B_Energy",
+        "company_revenue": 100.53,
+        "company_sector": "Energy"
+    },
+    "Pingan Insurance": {
+        "company_dir": "18.PingAn Insurance_$100.07 B_Financial Service",
+        "company_revenue": 100.07,
+        "company_sector": "Financials"
+    },
+    "CM bank": {
+        "company_dir": "14.CM Bank_$108.68 B_Financial Service",
+        "company_revenue": 108.68,
+        "company_sector": "Financials"
+    },
+    "China Construction Bank": {
+        "company_dir": "8.China Construction Bank_$178.16 B_Financials",
+        "company_revenue": 178.16,
+        "company_sector": "Financials"
+    },
+    "China Shenhua Energy": {
+        "company_dir": "16.China Shenhua Energy_$103.81 B_Energy",
+        "company_revenue": 103.81,
+        "company_sector": "Energy"
+    },
+    "Pinduoduo": {
+        "company_dir": "9.Pinduoduo_$176.94 B_Information Tech",
+        "company_revenue": 176.94,
+        "company_sector": "Information Technology"
+    },
+    "Bank of China": {
+        "company_dir": "10.Bank of China_$175.50 B_Financials",
+        "company_revenue": 175.5,
+        "company_sector": "Financials"
+    },
+    "BYD": {
+        "company_dir": "19.BYD_$98.15 B_Industrials",
+        "company_revenue": 98.15,
+        "company_sector": "Industries"
+    },
+    "Reliance Industries": {
+        "company_dir": "1.Reliance Industries_$244.77 B_Energy",
+        "company_revenue": 244.77,
+        "company_sector": "Energy"
+    },
+    "Kotak Mahindra Bank": {
+        "company_dir": "20.Kotak Mahindra Bank_$41.80 B_Financial Service",
+        "company_revenue": 41.8,
+        "company_sector": "Financials"
+    },
+    "HDFC Bank": {
+        "company_dir": "3.HDFC Bank_$152.34 B_Financials",
+        "company_revenue": 152.34,
+        "company_sector": "Financials"
+    },
+    "Bajaj Auto": {
+        "company_dir": "23.Bajaj Auto_$39.46 B_Consumer Discretionary",
+        "company_revenue": 39.46,
+        "company_sector": "Consumer Discretionary"
+    },
+    "HCL Technologies": {
+        "company_dir": "12.HCL Technologies_$56.64 B_Information Technology",
+        "company_revenue": 56.64,
+        "company_sector": "Information Technology"
+    },
+    "Tata Consultancy Services": {
+        "company_dir": "2.Tata Consultancy Services_$189.90 B_Information Tech",
+        "company_revenue": 189.9,
+        "company_sector": "Information Technology"
+    },
+    "ICICI Bank": {
+        "company_dir": "5.ICICI Bank_$99.33 B_Financials",
+        "company_revenue": 99.33,
+        "company_sector": "Financials"
+    },
+    "Oil&Natural Gas": {
+        "company_dir": "16.Oil&Natural Gas_$46.31 B_Energy",
+        "company_revenue": 46.31,
+        "company_sector": "Energy"
+    },
+    "Tata Motors": {
+        "company_dir": "15.Tata Motors_$50.61 B_Industrials",
+        "company_revenue": 50.61,
+        "company_sector": "Industries"
+    },
+    "State Bank of India": {
+        "company_dir": "6.State Bank of India_$91.89 B_Financials",
+        "company_revenue": 91.89,
+        "company_sector": "Financials"
+    },
+    "Hindustan Unilever": {
+        "company_dir": "9.Hindustan Unilever_$76.16 B_Consumer Staples",
+        "company_revenue": 76.16,
+        "company_sector": "Consumer Staples"
+    },
+    "Axis Bank": {
+        "company_dir": "19.Axis Bank_$42.72 B_Financial Service",
+        "company_revenue": 42.72,
+        "company_sector": "Financials"
+    },
+    "Larsen & Toubro": {
+        "company_dir": "11.Larsen & Toubro_$58.58 B_Industrials",
+        "company_revenue": 58.58,
+        "company_sector": "Industries"
+    },
+    "Maruti Suzuki India": {
+        "company_dir": "17.Maruti Suzuki India_$45.66 B_Industrials",
+        "company_revenue": 45.66,
+        "company_sector": "Industries"
+    },
+    "Bajaj Finance": {
+        "company_dir": "13.Bajaj Finance_$53.94 B_Financial Service",
+        "company_revenue": 53.94,
+        "company_sector": "Financials"
+    },
+    "Sun Pharmaceutical": {
+        "company_dir": "14.Sun Pharmaceutical_$52.18 B_Health Care",
+        "company_revenue": 52.18,
+        "company_sector": "Health Care"
+    },
+    "Bharti Airtel": {
+        "company_dir": "4.Bharti Airtel_$107.39 B_Communication Services",
+        "company_revenue": 107.39,
+        "company_sector": "Communication Services"
+    },
+    "NTPC Limited": {
+        "company_dir": "18.NTPC Limited_$45.66 B_Energy",
+        "company_revenue": 45.66,
+        "company_sector": "Energy"
+    },
+    "Mahindra & Mahindra": {
+        "company_dir": "22.Mahindra & Mahindra_$42.44 B_Consumer Discretionary",
+        "company_revenue": 42.44,
+        "company_sector": "Consumer Discretionary"
+    },
+    "Adani Enterprises": {
+        "company_dir": "21.Adani Enterprises_$43.12 B_Materials",
+        "company_revenue": 43.12,
+        "company_sector": "Materials"
+    },
+    "ITC": {
+        "company_dir": "10.ITC_$73.68 B_Consumer Staples",
+        "company_revenue": 73.68,
+        "company_sector": "Consumer Staples"
+    },
+    "Life Insurance Corporation of India": {
+        "company_dir": "8.Life Insurance Corporation of India_$89.05 B_Financials",
+        "company_revenue": 89.05,
+        "company_sector": "Financials"
+    },
+    "UltraTech Cement": {
+        "company_dir": "24.UltraTech Cement_$39.27 B_Industries",
+        "company_revenue": 39.27,
+        "company_sector": "Industries"
+    },
+    "Infosys": {
+        "company_dir": "7.Infosys_$90.16 B_Information Tech",
+        "company_revenue": 90.16,
+        "company_sector": "Information Technology"
+    }
+}

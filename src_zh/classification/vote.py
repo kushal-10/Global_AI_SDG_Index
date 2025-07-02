@@ -1,14 +1,18 @@
 import ast
 import json
 import os
+from tqdm import tqdm
 
 import pandas as pd
+
+from src.retrievalv2.chunks import get_chunks
 
 
 def load_json(json_path: str) -> dict:
     with open(json_path) as json_file:
         return json.load(json_file)
 
+COMPANY_MAP = load_json("src_zh/classification/mapping.json")
 
 def merge_subtargets(goal_dict: dict) -> set:
 
@@ -65,69 +69,70 @@ def get_majority_vote(base_data, mini_data, nano_data) -> dict:
 
 def get_frequency():
     FIRM = []
+    SECTOR = []
+    REVENUE = []
     YEAR = []
     CTRY = []
-    SECT = []
-    REVN = []
-    GOAL = []
-    CLSD = []
-    UNCLSD = []
+    TOTAL = [] # total passages
     REGEX = []
+    SEMANTIC = [] # total after majority vote
+    CLASSIFIED = []
+    RESULT = []
 
     passages = 0
-    BASE_DIR = "annual_txts_fitz"
+    BASE_DIR = "annual_zh/annual_txts_zh"
     for country in os.listdir(BASE_DIR):
         if os.path.isdir(os.path.join(BASE_DIR, country)):
             companies = os.listdir(os.path.join(BASE_DIR, country))
-            for company in companies:
+            for company in tqdm(companies, desc=country):
                 if os.path.isdir(os.path.join(BASE_DIR, country, company)):
                     years = os.listdir(os.path.join(BASE_DIR, country, company))
                     for year in years:
                         if os.path.isdir(os.path.join(BASE_DIR, country, company, year)):
-                            if os.path.exists(os.path.join(BASE_DIR, country, company, year, "regex_output.json")):
-                                regex_data = load_json(os.path.join(BASE_DIR, country, company, year, "semantic_output.json"))
-                                regex = len(regex_data)
 
-                                if os.path.exists(os.path.join(BASE_DIR, country, company, year, "classifications.json")):
-                                    base_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_41.json"))
-                                    mini_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications.json"))
-                                    nano_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_nano.json"))
-                                    final_result, classified, unclassified, total = get_majority_vote(base_data, mini_data, nano_data)
+                            if os.path.exists(os.path.join(BASE_DIR, country, company, year, "classifications_base.json")):
+                                base_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_base.json"))
+                                mini_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_mini.json"))
+                                nano_data = load_json(os.path.join(BASE_DIR, country, company, year, "classifications_nano.json"))
+                                final_result, classified, unclassified, total = get_majority_vote(base_data, mini_data, nano_data)
 
-                                    passages += total
-                                else:
-                                    classified = 0
-                                    unclassified = 0
-                                    total = 0
+                                text_path = os.path.join(BASE_DIR, country, company, year, "results.txt")
+                                with open(text_path, "r", encoding="utf-8") as f:
+                                    text_content = f.read()
+                                total_pass = get_chunks(text_content)
+                                total_chunks = len(total_pass)
 
-                                result_pth = os.path.join(BASE_DIR, country, company, year, "regex_output.json")
-                                splits = result_pth.split("/")
-                                country = splits[1]
-                                year = splits[-2]
-                                company_splits = splits[-3].split("_")
-                                company_name = company_splits[0].split(".")[-1]
+                                regex_file = os.path.join(BASE_DIR, country, company, year, "regex.json")
+                                regex_data = load_json(regex_file)
+                                regex_chunks = len(regex_data["chunks"])
 
-                                # Fix EON data
-                                if company_name == "E":
-                                    company_name = "EON"
+                                company_sector = COMPANY_MAP[company]["company_sector"]
+                                company_revenue = COMPANY_MAP[company]["company_revenue"]
 
-                                FIRM.append(company_name)
+                                FIRM.append(company)
                                 YEAR.append(year)
                                 CTRY.append(country)
-                                CLSD.append(classified)
-                                UNCLSD.append(unclassified)
-                                REGEX.append(regex)
-                                assert regex >= classified+unclassified
+                                SECTOR.append(company_sector)
+                                REVENUE.append(company_revenue)
+                                TOTAL.append(total_chunks)
+                                REGEX.append(regex_chunks)
+                                SEMANTIC.append(total)
+                                CLASSIFIED.append(classified)
+                                RESULT.append(final_result)
 
 
     df = pd.DataFrame(
         {
-            "Company": FIRM,
+            "Firm": FIRM,
             "Year": YEAR,
             "Country": CTRY,
-            "Unclassified": UNCLSD,
-            "Classified": CLSD,
-            "Regex": REGEX,
+            "Sector": SECTOR,
+            "Revenue": REVENUE,
+            "Total Passages": TOTAL,
+            "Passages after Filter 1": REGEX,
+            "Passages after Filter 2": SEMANTIC,
+            "Passages after Classification into SDGs": CLASSIFIED,
+            "Result": RESULT,
         }
     )
     print(passages)
@@ -135,4 +140,4 @@ def get_frequency():
 
 if __name__ == "__main__":
     df = get_frequency()
-    df.to_csv(os.path.join("src", "results", "classified.csv"))
+    df.to_csv(os.path.join("src_zh", "results", "data.csv"))
