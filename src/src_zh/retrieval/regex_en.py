@@ -6,14 +6,14 @@ import logging
 import os
 
 from src_zh.retrieval.keys import AI_TERMS
-from src.retrievalv2.chunks import get_chunks
+from src.retrieval.chunks import get_chunks
 
 # Set up basic logger
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     filemode="w",
-    filename=os.path.join("src_zh", "retrieval", "regex_en_prev.log"))
+    filename=os.path.join("src_zh", "retrieval_legacy", "regex_en_prev.log"))
 
 
 # Compile a single regex pattern for all terms, case-insensitive

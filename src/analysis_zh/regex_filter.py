@@ -8,15 +8,15 @@ from tqdm import tqdm
 import logging
 import os
 
-from src.retrievalv2.keys import AI_TERMS, SKIP_REPORTS
-from src.retrievalv2.chunks import get_chunks
+from src.analysis_zh.keys import AI_TERMS
+from src.retrieval.chunks import get_chunks
 
 # Set up basic logger
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     filemode="w",
-    filename=os.path.join("src", "retrievalv2", "regex_red.log"))
+    filename=os.path.join("src", "analysis_zh", "regex.log"))
 
 
 # Compile a single regex pattern for all terms, case-insensitive
@@ -38,13 +38,16 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
     """
     reports = []
 
-    # 795 actual reports...After checking for non_ascii
     for dirpath, dirnames, filenames in os.walk(input_dir):
         if 'results.txt' in filenames:
             file_path = os.path.join(dirpath, 'results.txt')
-            if file_path not in SKIP_REPORTS:
-                reports.append(file_path)
+            splits = file_path.split('/')
+            # if splits[2] in comps:
+            reports.append(file_path)
 
+    print(reports)
+
+    log_counts = {}
     total_chunks = 0 # Num chunks (overall)
     no_matches = 0 # Num reports
     for report_path in tqdm(reports, desc="Processing reports"):
@@ -65,6 +68,13 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
             with open(save_path, "w", encoding="utf-8") as f:
                 json.dump(result, f, indent=4, ensure_ascii=False)
             logging.info(f"Wrote {len(matched)} chunks to {save_path}")
+
+            splits = report_path.split("/")
+            company_info = splits[2]
+            if company_info not in log_counts:
+                log_counts[company_info] = len(matched)
+            else:
+                log_counts[company_info] += len(matched)
         else:
             logging.info(f"No matched chunks found in {report_path}")
             no_matches += 1
@@ -73,12 +83,13 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
     logging.info(f"Found AI related mentions in {len(reports) - no_matches} reports")
     logging.info(f"Found {total_chunks} chunks overall")
     logging.info(f"Found No AI related mentions for {no_matches} reports")
+    logging.info(f"Log Counts {log_counts}")
 
 
 if __name__ == "__main__":
 
-    BASE_DIR = "annual_txts_fitz"
-    OUTPUT_FILE = "regex_reduced_10kw.json"
+    BASE_DIR = "annual_txts_zh"
+    OUTPUT_FILE = "regex.json"
     OUTPUT_DIR = "annual_results"
     extract_ai_passages(input_dir=BASE_DIR, output_dir=OUTPUT_DIR, output_file=OUTPUT_FILE)
 

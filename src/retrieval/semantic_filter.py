@@ -19,7 +19,7 @@ import logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    filename=os.path.join("src", "retrievalv2", "semantic_filter.log"),
+                    filename=os.path.join("src", "retrieval", "semantic_filter.log"),
                     filemode='w')
 
 client = OpenAI()

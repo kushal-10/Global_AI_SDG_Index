@@ -8,20 +8,20 @@ from tqdm import tqdm
 import logging
 import os
 
-from src.zh.keys import AI_TERMS
-from src.retrievalv2.chunks import get_chunks
+from src.analysis_zh.keys import AI_TERMS_EN
+from src.retrieval.chunks import get_chunks
 
 # Set up basic logger
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     filemode="w",
-    filename=os.path.join("src", "zh", "regex.log"))
+    filename=os.path.join("src", "analysis_zh", "regex_en.log"))
 
 
 # Compile a single regex pattern for all terms, case-insensitive
 pattern = re.compile(
-    r"(" + r"|".join(AI_TERMS) + r")",
+    r"(" + r"|".join(AI_TERMS_EN) + r")",
     flags=re.IGNORECASE
 )
 
@@ -38,18 +38,19 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
     """
     reports = []
 
+    # 795 actual reports...After checking for non_ascii
     for dirpath, dirnames, filenames in os.walk(input_dir):
         if 'results.txt' in filenames:
             file_path = os.path.join(dirpath, 'results.txt')
             splits = file_path.split('/')
-            # if splits[2] in comps:
-            reports.append(file_path)
+            if splits[1] == "USA":
+                reports.append(file_path)
 
-    print(reports)
+    print(len(reports))
 
-    log_counts = {}
     total_chunks = 0 # Num chunks (overall)
     no_matches = 0 # Num reports
+    log_counts = {}
     for report_path in tqdm(reports, desc="Processing reports"):
         result = {}
         with open(report_path, encoding="utf-8") as f:
@@ -60,8 +61,16 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
             # Store only reports with at least one match
             result["chunks"] = matched
             total_chunks += len(matched)
-            save_path = report_path.replace("results.txt", "")
-            save_path = save_path.replace(input_dir, output_dir)
+
+            splits = report_path.split("/")
+            company_info = splits[2].split("_")[0].split('.')[-1]
+            if company_info not in log_counts:
+                log_counts[company_info] = len(matched)
+            else:
+                log_counts[company_info] += len(matched)
+
+
+            save_path = os.path.join(output_dir, splits[1], company_info, splits[3])
             if not os.path.exists(save_path):
                 os.makedirs(save_path)
             save_path = os.path.join(save_path, output_file)
@@ -69,12 +78,7 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
                 json.dump(result, f, indent=4, ensure_ascii=False)
             logging.info(f"Wrote {len(matched)} chunks to {save_path}")
 
-            splits = report_path.split("/")
-            company_info = splits[2]
-            if company_info not in log_counts:
-                log_counts[company_info] = len(matched)
-            else:
-                log_counts[company_info] += len(matched)
+
         else:
             logging.info(f"No matched chunks found in {report_path}")
             no_matches += 1
@@ -88,7 +92,7 @@ def extract_ai_passages(input_dir: str, output_dir: str, output_file:str):
 
 if __name__ == "__main__":
 
-    BASE_DIR = "annual_txts_zh"
+    BASE_DIR = "annual_txts_fitz"
     OUTPUT_FILE = "regex.json"
     OUTPUT_DIR = "annual_results"
     extract_ai_passages(input_dir=BASE_DIR, output_dir=OUTPUT_DIR, output_file=OUTPUT_FILE)

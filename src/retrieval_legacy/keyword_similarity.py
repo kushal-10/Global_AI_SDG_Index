@@ -24,7 +24,7 @@ def clean_word(word):
 # Set parameters
 keyword = 'artificial intelligence'
 similarity_threshold = 0.7
-output_dir = 'src/retrieval/results/'
+output_dir = 'src/retrieval_legacy/results/'
 os.makedirs(output_dir, exist_ok=True)
 
 # Iterate through each year from 2014 to 2023

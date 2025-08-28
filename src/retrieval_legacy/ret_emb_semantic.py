@@ -42,7 +42,7 @@ for query in ai_queries:
         if score > 0.75:  
             matched_chunks.add(doc_text.strip())
 
-output_path = "src/retrieval/results/tesla_2023_075.json"
+output_path = "src/retrieval_legacy/results/tesla_2023_075.json"
 with open(output_path, "w") as f:
     json.dump(list(matched_chunks), f, indent=4)
 

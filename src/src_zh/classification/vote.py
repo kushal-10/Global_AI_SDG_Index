@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 import pandas as pd
 
-from src.retrievalv2.chunks import get_chunks
+from src.retrieval.chunks import get_chunks
 
 
 def load_json(json_path: str) -> dict:

@@ -9,7 +9,7 @@ from tqdm import tqdm
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    filename=os.path.join("src", "retrievalv2", "validate.log"),
+                    filename=os.path.join("src", "retrieval", "validate.log"),
                     filemode='w')
 
 def validate_response(response):

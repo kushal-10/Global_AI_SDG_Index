@@ -107,7 +107,7 @@ def extract_passages(output_file: str):
 
     print(tot_ment)
 
-def extract_sample(pth:str = "src/retrieval/results/ret_regex_2023.json"):
+def extract_sample(pth:str = "src/retrieval_legacy/results/ret_regex_2023.json"):
     txt_path = os.path.join("annual_txts_fitz", "USA", "10.Tesla_$663.43B_Industries", "2023", "results.txt")
     # Check if the key already exists
 
